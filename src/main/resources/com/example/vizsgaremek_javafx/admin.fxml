@@ -33,7 +33,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button alignment="TOP_CENTER" mnemonicParsing="false" text="Felhasználók" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+      <Button fx:id="btnUsers" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickUser" text="Felhasználók" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="TOP">
          <effect>
             <Blend />
          </effect>

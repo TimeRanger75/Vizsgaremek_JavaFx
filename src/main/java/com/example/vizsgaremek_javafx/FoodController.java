@@ -15,6 +15,8 @@ public class FoodController {
     private Button btnStat;
     @FXML
     private Button btnExit;
+    @FXML
+    private Button btnUser;
 
     @FXML
     public void clickStat(ActionEvent actionEvent) {
@@ -28,5 +30,10 @@ public class FoodController {
     public void clickExit(ActionEvent actionEvent) {
         Stage stage = (Stage) this.btnExit.getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    public void clickUser(ActionEvent actionEvent) {
+
     }
 }

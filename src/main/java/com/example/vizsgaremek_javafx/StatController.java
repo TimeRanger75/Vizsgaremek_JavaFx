@@ -1,24 +1,32 @@
 package com.example.vizsgaremek_javafx;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
 public class StatController {
-    @javafx.fxml.FXML
+    @FXML
     private Button btnFelvetel;
-    @javafx.fxml.FXML
+    @FXML
     private GridPane userTable;
-    @javafx.fxml.FXML
+    @FXML
     private Button btnStat;
-    @javafx.fxml.FXML
+    @FXML
     private Button btnExit;
 
-    @javafx.fxml.FXML
+    @FXML
     public void clickStat(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void clickFelvetel(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void clickExit(ActionEvent actionEvent) {
+        Stage stage = (Stage) this.btnExit.getScene().getWindow();
+        stage.close();
     }
 }

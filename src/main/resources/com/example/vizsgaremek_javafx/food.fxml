@@ -22,7 +22,7 @@
    <children>
       <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="3">
         <columns>
-          <TableColumn prefWidth="75.0" text="Név" />
+          <TableColumn prefWidth="75.0" text="Étel neve" />
           <TableColumn prefWidth="102.0" text="Felhasználó név" />
             <TableColumn prefWidth="113.0" text="Email cím" />
         </columns>
