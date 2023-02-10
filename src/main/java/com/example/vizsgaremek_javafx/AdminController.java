@@ -23,13 +23,16 @@ public class AdminController {
 
     @FXML
     public void clickStat(ActionEvent actionEvent) {
+        System.out.println("asd");
         try {
             FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("stat.fxml"));
             Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage stage=new Stage();
-            stage.setTitle("Statisztika");
-            stage.setScene(scene);
-            stage.show();
+            Stage stat=new Stage();
+            Stage stage = (Stage) this.btnExit.getScene().getWindow();
+            stage.close();
+            stat.setTitle("Statisztika");
+            stat.setScene(scene);
+            stat.show();
         } catch (IOException e) {
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Hiba");
@@ -39,13 +42,16 @@ public class AdminController {
 
     @FXML
     public void clickFelvetel(ActionEvent actionEvent) {
+        System.out.println("asd");
         try {
             FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("food.fxml"));
             Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage stage=new Stage();
-            stage.setTitle("Étel felvétel");
-            stage.setScene(scene);
-            stage.show();
+            Stage food=new Stage();
+            Stage admin = (Stage) this.btnExit.getScene().getWindow();
+            admin.close();
+            food.setTitle("Étel felvétel");
+            food.setScene(scene);
+            food.show();
         } catch (IOException e) {
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Hiba");

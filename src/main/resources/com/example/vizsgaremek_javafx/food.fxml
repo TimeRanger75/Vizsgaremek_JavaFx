@@ -33,18 +33,13 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button fx:id="btnUser" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickUser" text="Felhasználók" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+      <Button fx:id="btnUser" alignment="CENTER" mnemonicParsing="false" onAction="#clickUser" text="Felhasználók" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <effect>
             <Blend />
          </effect>
          <GridPane.margin>
             <Insets top="10.0" />
          </GridPane.margin>
-      </Button>
-      <Button fx:id="btnFelvetel" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickFelvetel" text="Étel felvétel" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER">
-         <effect>
-            <Blend />
-         </effect>
       </Button>
       <Button fx:id="btnStat" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickStat" text="Statisztika" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
          <effect>
