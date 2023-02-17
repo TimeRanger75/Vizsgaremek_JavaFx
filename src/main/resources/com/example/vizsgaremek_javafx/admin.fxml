@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.AdminController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.AdminController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="151.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="671.0" minWidth="10.0" prefWidth="609.0" />
@@ -33,7 +33,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button fx:id="btnFelvetel" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickFelvetel" text="Étel felvétel" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER">
+      <Button fx:id="btnFelvetel" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickFelvetel" text="Ételek" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER">
          <effect>
             <Blend />
          </effect>

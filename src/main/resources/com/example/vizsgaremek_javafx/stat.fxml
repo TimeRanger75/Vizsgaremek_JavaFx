@@ -41,7 +41,7 @@
             <Insets top="10.0" />
          </GridPane.margin>
       </Button>
-      <Button fx:id="btnFelvetel" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickFelvetel" text="Étel felvétel" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+      <Button fx:id="btnFelvetel" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickFelvetel" text="Ételek" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
          <effect>
             <Blend />
          </effect>

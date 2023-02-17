@@ -1,9 +1,6 @@
 package com.example.vizsgaremek_javafx;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -17,6 +14,12 @@ public class RequestHandler {
         return getResponse(connection);
     }
 
+    public static Response post(String url, String data) throws IOException{
+        HttpURLConnection connection=setupConnection(url);
+        connection.setRequestMethod("POST");
+        addRequsetBody(connection, data);
+        return getResponse(connection);
+    }
 
     private static HttpURLConnection setupConnection(String url) throws IOException {
         URL urlObj = new URL(url);
@@ -47,4 +50,16 @@ public class RequestHandler {
         String content = builder.toString().trim();
         return new Response(responseCode, content);
     }
+
+    private static void addRequsetBody(HttpURLConnection connection, String data) throws IOException{
+        connection.setRequestProperty("Content-Type", "application/json");
+        connection.setDoOutput(true);
+        OutputStream os = connection.getOutputStream();
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os));
+        writer.write(data);
+        writer.flush();
+        writer.close();
+        os.close();
+    }
+
 }
