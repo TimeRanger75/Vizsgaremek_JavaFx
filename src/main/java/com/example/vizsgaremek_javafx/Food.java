@@ -2,19 +2,21 @@ package com.example.vizsgaremek_javafx;
 
 public class Food {
 
-    public static final String FOOD_URL="http://localhost:3000/foods";
+    public static final String FOOD_URL="http://localhost:3000/food";
     private String name;
+    private int id;
     private double calorie;
     private double protein;
     private double carbohydrate;
     private double fat;
 
-    public Food(String name, double calorie, double protein, double carbohydrate, double fat) {
+    public Food(String name, int id, double calorie, double protein, double carbohydrate, double fat) {
         this.name = name;
         this.calorie = calorie;
         this.protein = protein;
         this.carbohydrate = carbohydrate;
         this.fat = fat;
+        this.id=id;
     }
 
     public String getName() {
@@ -56,5 +58,9 @@ public class Food {
     public void setFat(double fat) {
         this.fat = fat;
     }
+
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
 }
 

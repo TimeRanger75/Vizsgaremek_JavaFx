@@ -22,7 +22,8 @@
    <children>
       <TableView fx:id="tableFoods" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="3">
         <columns>
-          <TableColumn fx:id="name" prefWidth="75.0" text="Étel neve" />
+            <TableColumn fx:id="id" prefWidth="16.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="186.0" text="Étel neve" />
           <TableColumn fx:id="calorie" prefWidth="102.0" text="Kalória" />
             <TableColumn fx:id="protein" prefWidth="113.0" text="Protein" />
             <TableColumn fx:id="carbohydrate" prefWidth="75.0" text="Szénhidrát" />
@@ -35,12 +36,12 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button fx:id="btnUser" alignment="CENTER" mnemonicParsing="false" onAction="#clickUser" text="Felhasználók" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <Button fx:id="btnUser" alignment="CENTER" mnemonicParsing="false" onAction="#clickUser" text="Felhasználók" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER">
          <effect>
             <Blend />
          </effect>
          <GridPane.margin>
-            <Insets top="10.0" />
+            <Insets />
          </GridPane.margin>
       </Button>
       <Button fx:id="btnStat" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#clickStat" text="Statisztika" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
@@ -55,6 +56,11 @@
       <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#clickInsert" text="Étel felvétele" GridPane.halignment="CENTER" GridPane.valignment="TOP">
          <GridPane.margin>
             <Insets top="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#clickUpdate" text="Frissítés" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="60.0" />
          </GridPane.margin>
       </Button>
    </children>

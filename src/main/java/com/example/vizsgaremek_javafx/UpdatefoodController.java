@@ -1,18 +1,14 @@
 package com.example.vizsgaremek_javafx;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ResourceBundle;
 
-public class InsertfoodController {
-    @FXML
-    private Button Feltölt;
+public class UpdatefoodController {
     @FXML
     private Spinner<Double> fatField;
     @FXML
@@ -23,6 +19,10 @@ public class InsertfoodController {
     private TextField nameField;
     @FXML
     private Spinner<Double> carboField;
+    @FXML
+    private Button btnUpdate;
+
+    private Food food;
 
     @FXML
     private void initialize(){
@@ -39,35 +39,49 @@ public class InsertfoodController {
         calorieField.setValueFactory(CalorievalueFactory);
     }
 
+    public  void setFood(Food food){
+        this.food=food;
+        nameField.setText(this.food.getName());
+        fatField.getValueFactory().setValue(this.food.getFat());
+        carboField.getValueFactory().setValue(this.food.getCarbohydrate());
+        proteinField.getValueFactory().setValue(this.food.getProtein());
+        calorieField.getValueFactory().setValue(this.food.getCalorie());
+    }
+
     @FXML
-    public void submitClick(ActionEvent actionEvent) {
-        String name=nameField.getText().trim();
-        double calorie=calorieField.getValue();
+    public void updateClick(ActionEvent actionEvent) {
+        String foodName=nameField.getText().trim();
         double fat=fatField.getValue();
+        double calorie=calorieField.getValue();
         double carbo=carboField.getValue();
         double protein=proteinField.getValue();
-        if (name.isEmpty()){
+        if (foodName.isEmpty()){
             Alert warning=new Alert(Alert.AlertType.WARNING);
             warning.setHeaderText("Név megadása kötelező!");
             warning.showAndWait();
             return;
         }
-        Food newFood=new Food(name,0,calorie,protein,carbo,fat);
+        this.food.setName(foodName);
+        this.food.setCalorie(calorie);
+        this.food.setCarbohydrate(carbo);
+        this.food.setFat(fat);
+        this.food.setProtein(protein);
         Gson converter=new Gson();
-        String json=converter.toJson(newFood);
-        try{
-            Response response=RequestHandler.post(Food.FOOD_URL, json);
-            if (response.getResponseCode()==201){
-                nameField.setText("");
-                carboField.getValueFactory().setValue(50.0);
-                calorieField.getValueFactory().setValue(50.0);
-                fatField.getValueFactory().setValue(50.0);
-                proteinField.getValueFactory().setValue(50.0);
+        String json= converter.toJson(this.food);
+        try {
+            String url  = Food.FOOD_URL+"/"+this.food.getId();
+            Response response= RequestHandler.patch(url, json);
+            if (response.getResponseCode()==200){
+                Stage stage=(Stage) this.btnUpdate.getScene().getWindow();
+                stage.close();
+            }else{
+                Alert alert=new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("Hiba történt a frissítés során ");
+                alert.showAndWait();
             }
         }catch (IOException e){
             Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText("A szerverhez való kapcsolódás sikertelen");
-            alert.setContentText(e.getMessage());
+            alert.setContentText("Nem lehet kapcsolódni a szerverre"+e.getMessage());
             alert.showAndWait();
         }
     }

@@ -83,7 +83,6 @@ public class AdminController {
 
     @FXML
     public void clickFelvetel(ActionEvent actionEvent) {
-        System.out.println("asd");
         try {
             FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("food.fxml"));
             Scene scene=new Scene(fxmlLoader.load(), 800, 600);

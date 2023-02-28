@@ -37,10 +37,15 @@ public class FoodController {
     private TableColumn<Food,Double> carbohydrate;
     @FXML
     private TableView tableFoods;
+    @FXML
+    private Button btnUpdate;
+    @FXML
+    private TableColumn<Food, Number> id;
 
 
     @FXML
     private void initialize(){
+        id.setCellValueFactory(new PropertyValueFactory<>("id"));
         name.setCellValueFactory(new PropertyValueFactory<>("name"));
         calorie.setCellValueFactory(new PropertyValueFactory<>("calorie"));
         protein.setCellValueFactory(new PropertyValueFactory<>("protein"));
@@ -135,5 +140,38 @@ public class FoodController {
             error.setHeaderText("Hiba történt a betöltés során");
             error.showAndWait();
         }
+    }
+
+    @FXML
+    public void clickUpdate(ActionEvent actionEvent) {
+        Food selected= (Food) tableFoods.getSelectionModel().getSelectedItem();
+        if (selected==null){
+            Alert alert=new Alert(Alert.AlertType.WARNING);
+            alert.setContentText("Válasszon ki egy ételt amit frissítene");
+            alert.showAndWait();
+            return;
+        }try{
+            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("updatefood.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 640, 480);
+            UpdatefoodController controller=fxmlLoader.getController();
+            controller.setFood(selected);
+            Stage stage = new Stage();
+            stage.setTitle(selected.getName()+"frissítése");
+            stage.setScene(scene);
+            stage.setOnHidden(event ->{
+                try {
+                    loadFoods();
+                }catch (IOException e){
+                    Alert alert=new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Nem lehet kapcsolódni a szerverhez");
+                    alert.showAndWait();
+                }
+            });
+            stage.show();
+        }catch (IOException e){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Hiba lépett fel a megnyitás során");
+            alert.showAndWait();
+       }
     }
 }

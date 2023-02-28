@@ -2,7 +2,10 @@ package com.example.vizsgaremek_javafx;
 
 import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
 
 public class RequestHandler {
 
@@ -19,6 +22,19 @@ public class RequestHandler {
         connection.setRequestMethod("POST");
         addRequsetBody(connection, data);
         return getResponse(connection);
+    }
+
+    public static  Response patch(String url, String data) throws IOException{
+        HttpURLConnection connection=setupConnection(url);
+        connection.setRequestMethod("PATCH");
+        addRequsetBody(connection,data);
+        return getResponse(connection);
+        /*var request = HttpRequest.newBuilder()
+                .uri(URI.create(url))
+                .header("Content-Type", "application/json")
+                .method("PATCH")
+                .build();
+        request.*/
     }
 
     private static HttpURLConnection setupConnection(String url) throws IOException {
