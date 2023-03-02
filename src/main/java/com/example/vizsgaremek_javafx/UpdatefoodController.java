@@ -1,16 +1,17 @@
 package com.example.vizsgaremek_javafx;
 
-import com.fasterxml.jackson.core.JsonNode;
 import com.google.gson.Gson;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-
-
+import kong.unirest.HttpResponse;
+import kong.unirest.Unirest;
+import kong.unirest.JsonNode;
+import kong.unirest.ObjectMapper;
+import kong.unirest.gson.GsonObjectMapper;
 
 import java.io.IOException;
-import java.net.http.HttpResponse;
 
 public class UpdatefoodController {
     @FXML
@@ -73,7 +74,26 @@ public class UpdatefoodController {
         Gson converter=new Gson();
         String json= converter.toJson(this.food);
 
-    HttpResponse<JsonNo>
+        //GsonObjectMapper converter=new GsonObjectMapper();
+
+
+        HttpResponse<JsonNode> response=  Unirest.jsonPatch(Food.FOOD_URL + "/" + this.food.getId())
+                .header("Content-Type", "application/json")
+                .replace("/name", this.food.getName())
+                .replace("/calorie", this.food.getCalorie())
+                .replace("/protein", this.food.getProtein())
+                .replace("/carbohydrate", this.food.getCarbohydrate())
+                .replace("/fat", this.food.getFat())
+                .asJson();
+        System.out.println(response.getBody());
+        if (response.getStatus()==200){
+            Stage stage=(Stage) this.btnUpdate.getScene().getWindow();
+            stage.close();
+        }else{
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Hiba történt a frissítés során ");
+            alert.showAndWait();
+        }
 
         /*try {
             String url  = Food.FOOD_URL+"/"+this.food.getId();
