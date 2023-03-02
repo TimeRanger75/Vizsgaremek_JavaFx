@@ -1,12 +1,16 @@
 package com.example.vizsgaremek_javafx;
 
+import com.fasterxml.jackson.core.JsonNode;
 import com.google.gson.Gson;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+
+
 import java.io.IOException;
+import java.net.http.HttpResponse;
 
 public class UpdatefoodController {
     @FXML
@@ -68,7 +72,10 @@ public class UpdatefoodController {
         this.food.setProtein(protein);
         Gson converter=new Gson();
         String json= converter.toJson(this.food);
-        try {
+
+    HttpResponse<JsonNo>
+
+        /*try {
             String url  = Food.FOOD_URL+"/"+this.food.getId();
             Response response= RequestHandler.patch(url, json);
             if (response.getResponseCode()==200){
@@ -83,6 +90,6 @@ public class UpdatefoodController {
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Nem lehet kapcsolódni a szerverre"+e.getMessage());
             alert.showAndWait();
-        }
+        }*/
     }
 }

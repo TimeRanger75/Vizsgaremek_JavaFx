@@ -24,18 +24,20 @@ public class RequestHandler {
         return getResponse(connection);
     }
 
-    public static  Response patch(String url, String data) throws IOException{
+
+
+    /*public static  Response patch(String url, String data) throws IOException{
         HttpURLConnection connection=setupConnection(url);
         connection.setRequestMethod("PATCH");
         addRequsetBody(connection,data);
         return getResponse(connection);
-        /*var request = HttpRequest.newBuilder()
+        var request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .header("Content-Type", "application/json")
                 .method("PATCH")
                 .build();
-        request.*/
-    }
+        request.
+    }*/
 
     private static HttpURLConnection setupConnection(String url) throws IOException {
         URL urlObj = new URL(url);
