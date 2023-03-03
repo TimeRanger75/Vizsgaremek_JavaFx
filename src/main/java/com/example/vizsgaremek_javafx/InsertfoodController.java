@@ -1,16 +1,15 @@
 package com.example.vizsgaremek_javafx;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
+
 
 import java.io.IOException;
 import java.util.ResourceBundle;
 
-public class InsertfoodController {
+public class InsertfoodController extends AlertController {
     @FXML
     private Button Feltölt;
     @FXML
@@ -47,9 +46,7 @@ public class InsertfoodController {
         double carbo=carboField.getValue();
         double protein=proteinField.getValue();
         if (name.isEmpty()){
-            Alert warning=new Alert(Alert.AlertType.WARNING);
-            warning.setHeaderText("Név megadása kötelező!");
-            warning.showAndWait();
+            warning("Név megadása kötelező");
             return;
         }
         Food newFood=new Food(name,0,calorie,protein,carbo,fat);
@@ -65,10 +62,7 @@ public class InsertfoodController {
                 proteinField.getValueFactory().setValue(50.0);
             }
         }catch (IOException e){
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText("A szerverhez való kapcsolódás sikertelen");
-            alert.setContentText(e.getMessage());
-            alert.showAndWait();
+            error("A szerverhez való kapcsolódás sikertelen", e.getMessage());
         }
     }
 }

@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class StatController {
+public class StatController extends AlertController{
     @FXML
     private Button btnFelvetel;
     @FXML
@@ -34,9 +34,7 @@ public class StatController {
             food.setScene(scene);
             food.show();
         } catch (IOException e) {
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setContentText("Nem lehet elérni a táblát");
+            error("Nem lehet elérni a táblát");
         }
     }
 
@@ -59,9 +57,7 @@ public class StatController {
             user.setScene(scene);
             user.show();
         } catch (IOException e) {
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setContentText("Nem lehet elérni a táblát");
+            error("Nem lehet elérni a táblát");
         }
 
     }

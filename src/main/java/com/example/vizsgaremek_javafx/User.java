@@ -2,8 +2,9 @@ package com.example.vizsgaremek_javafx;
 
 public class User {
 
-    /*
-    * Contains the user's datas*/
+    /**
+    * Contains the user's datas
+     */
 
     public static final String USER_URL="http://localhost:3000/user";
     private String name;
@@ -15,6 +16,11 @@ public class User {
         this.username = username;
         this.email = email;
     }
+
+    /**
+     *
+     * @return the user's full name
+     */
 
     public String getName() {
         return name;

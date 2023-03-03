@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FoodController {
+public class FoodController extends AlertController{
     @FXML
     private Button btnStat;
     @FXML
@@ -55,9 +55,7 @@ public class FoodController {
             try {
                 loadFoods();
             }catch (IOException e){
-                Alert alert=new Alert(Alert.AlertType.ERROR);
-                alert.setHeaderText("Hiba történt az adatok betöltése során");
-                alert.setContentText(e.getMessage());
+                error("Hiba történt a betöltés során", e.getMessage());
                 Platform.exit();
             }
         });
@@ -87,9 +85,7 @@ public class FoodController {
             stat.setScene(scene);
             stat.show();
         } catch (IOException e) {
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setContentText("Nem lehet elérni a táblát");
+            error("Nem lehet elérni a táblát");
         }
     }
 
@@ -111,9 +107,7 @@ public class FoodController {
             admin.setScene(scene);
             admin.show();
         } catch (IOException e) {
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setContentText("Nem lehet elérni a táblát");
+            error("Nem lehet elérni a táblát");
         }
     }
 
@@ -129,16 +123,13 @@ public class FoodController {
                 try {
                     loadFoods();
                 }catch (IOException e){
-                    Alert error=new Alert(Alert.AlertType.ERROR);
-                    error.setHeaderText("Hiba történt a kapcsolódás során");
-                    error.showAndWait();
+                    error("Hiba történt a kapcsolódás során");
+
                 }
             });
             stage.show();
         }catch (IOException e){
-            Alert error=new Alert(Alert.AlertType.ERROR);
-            error.setHeaderText("Hiba történt a betöltés során");
-            error.showAndWait();
+            error("Hiba történt a betöltés során");
         }
     }
 
@@ -162,16 +153,12 @@ public class FoodController {
                 try {
                     loadFoods();
                 }catch (IOException e){
-                    Alert alert=new Alert(Alert.AlertType.ERROR);
-                    alert.setContentText("Nem lehet kapcsolódni a szerverhez");
-                    alert.showAndWait();
+                    error("Nem lehet kapcsolódni a szerverhez");
                 }
             });
             stage.show();
         }catch (IOException e){
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba lépett fel a megnyitás során");
-            alert.showAndWait();
+            error("Hiba lépett fel a megnyitás során");
        }
     }
 }

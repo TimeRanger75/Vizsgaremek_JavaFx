@@ -20,24 +20,19 @@ public class RequestHandler {
     public static Response post(String url, String data) throws IOException{
         HttpURLConnection connection=setupConnection(url);
         connection.setRequestMethod("POST");
-        addRequsetBody(connection, data);
+        addRequestBody(connection, data);
         return getResponse(connection);
     }
 
 
 
-    /*public static  Response patch(String url, String data) throws IOException{
-        HttpURLConnection connection=setupConnection(url);
-        connection.setRequestMethod("PATCH");
-        addRequsetBody(connection,data);
+    public static Response put(String url, String data) throws IOException {
+        HttpURLConnection connection = setupConnection(url);
+        connection.setRequestMethod("PUT");
+        addRequestBody(connection, data);
         return getResponse(connection);
-        var request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
-                .header("Content-Type", "application/json")
-                .method("PATCH")
-                .build();
-        request.
-    }*/
+    }
+
 
     private static HttpURLConnection setupConnection(String url) throws IOException {
         URL urlObj = new URL(url);
@@ -69,7 +64,7 @@ public class RequestHandler {
         return new Response(responseCode, content);
     }
 
-    private static void addRequsetBody(HttpURLConnection connection, String data) throws IOException{
+    private static void addRequestBody(HttpURLConnection connection, String data) throws IOException{
         connection.setRequestProperty("Content-Type", "application/json");
         connection.setDoOutput(true);
         OutputStream os = connection.getOutputStream();

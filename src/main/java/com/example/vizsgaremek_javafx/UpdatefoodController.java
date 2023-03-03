@@ -5,15 +5,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import kong.unirest.HttpResponse;
-import kong.unirest.Unirest;
-import kong.unirest.JsonNode;
-import kong.unirest.ObjectMapper;
-import kong.unirest.gson.GsonObjectMapper;
-
 import java.io.IOException;
 
-public class UpdatefoodController {
+public class UpdatefoodController extends AlertController{
     @FXML
     private Spinner<Double> fatField;
     @FXML
@@ -61,9 +55,7 @@ public class UpdatefoodController {
         double carbo=carboField.getValue();
         double protein=proteinField.getValue();
         if (foodName.isEmpty()){
-            Alert warning=new Alert(Alert.AlertType.WARNING);
-            warning.setHeaderText("Név megadása kötelező!");
-            warning.showAndWait();
+            warning("Név megadása kötelező");
             return;
         }
         this.food.setName(foodName);
@@ -73,43 +65,17 @@ public class UpdatefoodController {
         this.food.setProtein(protein);
         Gson converter=new Gson();
         String json= converter.toJson(this.food);
-
-        //GsonObjectMapper converter=new GsonObjectMapper();
-
-
-        HttpResponse<JsonNode> response=  Unirest.jsonPatch(Food.FOOD_URL + "/" + this.food.getId())
-                .header("Content-Type", "application/json")
-                .replace("/name", this.food.getName())
-                .replace("/calorie", this.food.getCalorie())
-                .replace("/protein", this.food.getProtein())
-                .replace("/carbohydrate", this.food.getCarbohydrate())
-                .replace("/fat", this.food.getFat())
-                .asJson();
-        System.out.println(response.getBody());
-        if (response.getStatus()==200){
-            Stage stage=(Stage) this.btnUpdate.getScene().getWindow();
-            stage.close();
-        }else{
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Hiba történt a frissítés során ");
-            alert.showAndWait();
-        }
-
-        /*try {
+        try {
             String url  = Food.FOOD_URL+"/"+this.food.getId();
-            Response response= RequestHandler.patch(url, json);
+            Response response= RequestHandler.put(url, json);
             if (response.getResponseCode()==200){
                 Stage stage=(Stage) this.btnUpdate.getScene().getWindow();
                 stage.close();
             }else{
-                Alert alert=new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("Hiba történt a frissítés során ");
-                alert.showAndWait();
+                error("Hiba történt a frissítés során");
             }
         }catch (IOException e){
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Nem lehet kapcsolódni a szerverre"+e.getMessage());
-            alert.showAndWait();
-        }*/
+            error("Nem lehetett kapcsolódni a szerverhez");
+        }
     }
 }

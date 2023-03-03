@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminController {
+public class AdminController extends AlertController{
     @FXML
     private Button btnFelvetel;
     @FXML
@@ -42,10 +42,8 @@ public class AdminController {
             try {
                 loadUsers();
             }catch (IOException e){
-               Alert alert=new Alert(Alert.AlertType.ERROR);
-               alert.setHeaderText("Hiba történt az adatok betöltése során");
-               alert.setContentText(e.getMessage());
-               Platform.exit();
+                error("Hiba történt a betöltés során", e.getMessage());
+                Platform.exit();
             }
         });
     }
@@ -75,9 +73,7 @@ public class AdminController {
             stat.setScene(scene);
             stat.show();
         } catch (IOException e) {
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setContentText("Nem lehet elérni a táblát");
+            error("Nem lehet elérni a táblát");
         }
     }
 
@@ -93,9 +89,7 @@ public class AdminController {
             food.setScene(scene);
             food.show();
         } catch (IOException e) {
-            Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setContentText("Nem lehet elérni a táblát");
+            error("Nem lehet elérni a táblát");
         }
     }
 
