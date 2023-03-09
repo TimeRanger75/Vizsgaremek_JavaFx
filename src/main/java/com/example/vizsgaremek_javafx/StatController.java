@@ -1,25 +1,23 @@
 package com.example.vizsgaremek_javafx;
 
 import com.google.gson.Gson;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
+import javafx.scene.chart.PieChart;
+import javafx.scene.chart.StackedBarChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
 
-public class StatController extends AlertController{
+public class StatController extends Controller {
 
     @FXML
     private Button btnFelvetel;
@@ -29,23 +27,38 @@ public class StatController extends AlertController{
     private Button btnExit;
     @FXML
     private Button btnUser;
-    @FXML
-    private BarChart barChart;
 
     private User[] users;
+    @FXML
+    private StackedBarChart stcackedBarChart;
+    @FXML
+    private PieChart pieChart;
 
     @FXML
     private void initialize() throws IOException {
         loadUsers();
-        final  String male="Férfi";
-        final  String female="Nő";
 
         XYChart.Series series1=new XYChart.Series();
+        XYChart.Series series2=new XYChart.Series();
+
         series1.setName("Nem");
-        series1.getData().add(new XYChart.Data("Felhasználók", users));
+        series1.getData().add(new XYChart.Data("Felhasználók", users.length));
+        series1.getData().add(new XYChart.Data("asdasd", 8));
 
+        series2.setName("asd");
+        series2.getData().add(new XYChart.Data("asdasda",16));
+        series2.getData().add(new XYChart.Data("dsadwdw",20));
 
-        barChart.getData().addAll(series1);
+        stcackedBarChart.getData().addAll(series1, series2);
+
+        ObservableList<PieChart.Data> pieChartData= FXCollections.observableArrayList(
+                new PieChart.Data("Felhasználók", users.length),
+                new PieChart.Data("asd",10),
+                new PieChart.Data("Foods", 7));
+        pieChart.setData(pieChartData);
+        pieChart.setTitle("asd");
+        pieChart.setClockwise(false);
+
     }
 
     private void loadUsers()throws IOException {
@@ -59,18 +72,7 @@ public class StatController extends AlertController{
 
     @FXML
     public void clickFelvetel(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("food.fxml"));
-            Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage food=new Stage();
-            Stage stat = (Stage) this.btnExit.getScene().getWindow();
-            stat.close();
-            food.setTitle("Étel felvétel");
-            food.setScene(scene);
-            food.show();
-        } catch (IOException e) {
-            error("Nem lehet elérni a táblát");
-        }
+        SceneOpen("food.fxml","Ételek", this.btnExit);
     }
 
     @FXML
@@ -82,18 +84,6 @@ public class StatController extends AlertController{
 
     @FXML
     public void clickUser(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("admin.fxml"));
-            Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage user=new Stage();
-            Stage stat = (Stage) this.btnExit.getScene().getWindow();
-            stat.close();
-            user.setTitle("Étel felvétel");
-            user.setScene(scene);
-            user.show();
-        } catch (IOException e) {
-            error("Nem lehet elérni a táblát");
-        }
-
+        SceneOpen("admin.fxml", "Felhasználók", this.btnExit);
     }
 }

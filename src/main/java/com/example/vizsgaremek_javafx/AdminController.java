@@ -6,17 +6,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminController extends AlertController{
+public class AdminController extends Controller {
     @FXML
     private Button btnFelvetel;
     @FXML
@@ -58,28 +56,16 @@ public class AdminController extends AlertController{
             tableUsers.getItems().add(user);
         }
 
-
     }
 
     @FXML
     public void clickStat(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("stat.fxml"));
-            Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage stat=new Stage();
-            Stage stage = (Stage) this.btnExit.getScene().getWindow();
-            stage.close();
-            stat.setTitle("Statisztika");
-            stat.setScene(scene);
-            stat.show();
-        } catch (IOException e) {
-            error("Nem lehet elérni a táblát");
-        }
+        SceneOpen("stat.fxml","Statisztika", this.btnExit);
     }
 
     @FXML
     public void clickFelvetel(ActionEvent actionEvent) {
-        try {
+        /*try {
             FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("food.fxml"));
             Scene scene=new Scene(fxmlLoader.load(), 800, 600);
             Stage food=new Stage();
@@ -90,7 +76,8 @@ public class AdminController extends AlertController{
             food.show();
         } catch (IOException e) {
             error("Nem lehet elérni a táblát");
-        }
+        }*/
+        SceneOpen("food.fxml", "Ételek", this.btnExit);
     }
 
     @FXML

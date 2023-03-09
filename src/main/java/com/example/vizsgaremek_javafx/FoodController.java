@@ -11,12 +11,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FoodController extends AlertController{
+public class FoodController extends Controller {
     @FXML
     private Button btnStat;
     @FXML
@@ -75,18 +74,8 @@ public class FoodController extends AlertController{
 
     @FXML
     public void clickStat(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("stat.fxml"));
-            Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage stat=new Stage();
-            Stage food = (Stage) this.btnExit.getScene().getWindow();
-            food.close();
-            stat.setTitle("Statisztika");
-            stat.setScene(scene);
-            stat.show();
-        } catch (IOException e) {
-            error("Nem lehet elérni a táblát");
-        }
+
+        SceneOpen("stat.fxml","Statisztika",this.btnExit);
     }
 
     @FXML
@@ -97,18 +86,9 @@ public class FoodController extends AlertController{
 
     @FXML
     public void clickUser(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("admin.fxml"));
-            Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage admin=new Stage();
-            Stage food = (Stage) this.btnExit.getScene().getWindow();
-            food.close();
-            admin.setTitle("Felhasználók");
-            admin.setScene(scene);
-            admin.show();
-        } catch (IOException e) {
-            error("Nem lehet elérni a táblát");
-        }
+
+        SceneOpen("admin.fxml","Felhasználók", this.btnExit);
+
     }
 
     @FXML
@@ -147,7 +127,7 @@ public class FoodController extends AlertController{
             UpdatefoodController controller=fxmlLoader.getController();
             controller.setFood(selected);
             Stage stage = new Stage();
-            stage.setTitle(selected.getName()+"frissítése");
+            stage.setTitle(selected.getName()+" frissítése");
             stage.setScene(scene);
             stage.setOnHidden(event ->{
                 try {

@@ -7,44 +7,46 @@ import javafx.scene.control.*;
 
 
 import java.io.IOException;
-import java.util.ResourceBundle;
 
-public class InsertfoodController extends AlertController {
+public class InsertfoodController extends Controller {
     @FXML
     private Button Feltölt;
     @FXML
-    private Spinner<Double> fatField;
+    private TextField fatField;
     @FXML
-    private Spinner<Double> calorieField;
+    private TextField calorieField;
     @FXML
-    private Spinner<Double> proteinField;
+    private TextField proteinField;
     @FXML
     private TextField nameField;
     @FXML
-    private Spinner<Double> carboField;
+    private TextField carboField;
+
+    private String name;
+    private double calorie;
+    private double fat;
+    private double carbo;
+    private double protein;
 
     @FXML
     private void initialize(){
-        SpinnerValueFactory.DoubleSpinnerValueFactory FatvalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        fatField.setValueFactory(FatvalueFactory);
-
-        SpinnerValueFactory.DoubleSpinnerValueFactory CarbovalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        carboField.setValueFactory(CarbovalueFactory);
-
-        SpinnerValueFactory.DoubleSpinnerValueFactory ProteinvalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        proteinField.setValueFactory(ProteinvalueFactory);
-
-        SpinnerValueFactory.DoubleSpinnerValueFactory CalorievalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        calorieField.setValueFactory(CalorievalueFactory);
+        proteinField.setText("0");
+        carboField.setText("0");
+        calorieField.setText("0");
+        proteinField.setText("0");
     }
 
     @FXML
     public void submitClick(ActionEvent actionEvent) {
-        String name=nameField.getText().trim();
-        double calorie=calorieField.getValue();
-        double fat=fatField.getValue();
-        double carbo=carboField.getValue();
-        double protein=proteinField.getValue();
+        name=nameField.getText().trim();
+        try {
+            calorie=Double.parseDouble(calorieField.getText());
+            fat=Double.parseDouble(fatField.getText());
+            carbo=Double.parseDouble(carboField.getText());
+            protein=Double.parseDouble(proteinField.getText());
+        }catch (NumberFormatException e){
+            warning("Csak szám adható meg a név mezőn kívül!");
+        }
         if (name.isEmpty()){
             warning("Név megadása kötelező");
             return;
@@ -56,10 +58,10 @@ public class InsertfoodController extends AlertController {
             Response response=RequestHandler.post(Food.FOOD_URL, json);
             if (response.getResponseCode()==201){
                 nameField.setText("");
-                carboField.getValueFactory().setValue(50.0);
-                calorieField.getValueFactory().setValue(50.0);
-                fatField.getValueFactory().setValue(50.0);
-                proteinField.getValueFactory().setValue(50.0);
+                carboField.setText("0");
+                calorieField.setText("0");
+                fatField.setText("0");
+                proteinField.setText("0");
             }
         }catch (IOException e){
             error("A szerverhez való kapcsolódás sikertelen", e.getMessage());

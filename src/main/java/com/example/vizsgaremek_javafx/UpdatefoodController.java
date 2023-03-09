@@ -7,58 +7,62 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class UpdatefoodController extends AlertController{
-    @FXML
-    private Spinner<Double> fatField;
-    @FXML
-    private Spinner<Double> calorieField;
-    @FXML
-    private Spinner<Double> proteinField;
+public class UpdatefoodController extends Controller {
     @FXML
     private TextField nameField;
+
     @FXML
-    private Spinner<Double> carboField;
+    private TextField fatField;
+    @FXML
+    private TextField calorieField;
+    @FXML
+    private TextField proteinField;
+    @FXML
+    private TextField carboField;
     @FXML
     private Button btnUpdate;
 
     private Food food;
 
+    private String name;
+    private double calorie;
+    private double fat;
+    private double carbo;
+    private double protein;
+
     @FXML
     private void initialize(){
-        SpinnerValueFactory.DoubleSpinnerValueFactory FatvalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        fatField.setValueFactory(FatvalueFactory);
-
-        SpinnerValueFactory.DoubleSpinnerValueFactory CarbovalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        carboField.setValueFactory(CarbovalueFactory);
-
-        SpinnerValueFactory.DoubleSpinnerValueFactory ProteinvalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        proteinField.setValueFactory(ProteinvalueFactory);
-
-        SpinnerValueFactory.DoubleSpinnerValueFactory CalorievalueFactory=new SpinnerValueFactory.DoubleSpinnerValueFactory(0.0, 300, 50.0);
-        calorieField.setValueFactory(CalorievalueFactory);
+        proteinField.setText("0");
+        carboField.setText("0");
+        calorieField.setText("0");
+        proteinField.setText("0");
     }
 
     public  void setFood(Food food){
         this.food=food;
         nameField.setText(this.food.getName());
-        fatField.getValueFactory().setValue(this.food.getFat());
-        carboField.getValueFactory().setValue(this.food.getCarbohydrate());
-        proteinField.getValueFactory().setValue(this.food.getProtein());
-        calorieField.getValueFactory().setValue(this.food.getCalorie());
+        fatField.setText(Double.toString(this.food.getFat()));
+        carboField.setText(Double.toString(this.food.getCarbohydrate()));
+        proteinField.setText(Double.toString(this.food.getProtein()));
+        calorieField.setText(Double.toString(this.food.getCalorie()));
     }
 
     @FXML
     public void updateClick(ActionEvent actionEvent) {
-        String foodName=nameField.getText().trim();
-        double fat=fatField.getValue();
-        double calorie=calorieField.getValue();
-        double carbo=carboField.getValue();
-        double protein=proteinField.getValue();
-        if (foodName.isEmpty()){
+        name=nameField.getText().trim();
+        try {
+            calorie=Double.parseDouble(calorieField.getText());
+            fat=Double.parseDouble(fatField.getText());
+            carbo=Double.parseDouble(carboField.getText());
+            protein=Double.parseDouble(proteinField.getText());
+        }catch (NumberFormatException e){
+            warning("Csak szám adható meg a név mezőn kívül!");
+        }
+        if (name.isEmpty()){
             warning("Név megadása kötelező");
             return;
         }
-        this.food.setName(foodName);
+        this.food.setName(name);
         this.food.setCalorie(calorie);
         this.food.setCarbohydrate(carbo);
         this.food.setFat(fat);
