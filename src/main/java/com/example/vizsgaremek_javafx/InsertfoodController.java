@@ -34,6 +34,7 @@ public class InsertfoodController extends Controller {
         carboField.setText("0");
         calorieField.setText("0");
         proteinField.setText("0");
+        fatField.setText("0");
     }
 
     @FXML
@@ -46,9 +47,14 @@ public class InsertfoodController extends Controller {
             protein=Double.parseDouble(proteinField.getText());
         }catch (NumberFormatException e){
             warning("Csak szám adható meg a név mezőn kívül!");
+            return;
         }
         if (name.isEmpty()){
             warning("Név megadása kötelező");
+            return;
+        }
+        if (fat<=0 || calorie<=0 || carbo<=0 || protein<=0){
+            warning("Nem lehet 0 vagy annál kisebb érték");
             return;
         }
         Food newFood=new Food(name,0,calorie,protein,carbo,fat);
