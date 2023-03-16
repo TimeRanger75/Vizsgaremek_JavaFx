@@ -2,7 +2,7 @@ package com.example.vizsgaremek_javafx;
 
 public class User_form {
 
-
+    public static final String Form_URL="http://localhost:3000/calculator";
     private int id;
     private int weight;
     private int height;
