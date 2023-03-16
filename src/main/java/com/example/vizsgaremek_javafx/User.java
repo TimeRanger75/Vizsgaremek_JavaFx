@@ -17,10 +17,7 @@ public class User {
         this.email = email;
     }
 
-    /**
-     *
-     * @return the user's full name
-     */
+
 
     public String getName() {
         return name;

@@ -60,23 +60,13 @@ public class AdminController extends Controller {
 
     @FXML
     public void clickStat(ActionEvent actionEvent) {
+
         SceneOpen("stat.fxml","Statisztika", this.btnExit);
     }
 
     @FXML
     public void clickFelvetel(ActionEvent actionEvent) {
-        /*try {
-            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource("food.fxml"));
-            Scene scene=new Scene(fxmlLoader.load(), 800, 600);
-            Stage food=new Stage();
-            Stage admin = (Stage) this.btnExit.getScene().getWindow();
-            admin.close();
-            food.setTitle("Étel felvétel");
-            food.setScene(scene);
-            food.show();
-        } catch (IOException e) {
-            error("Nem lehet elérni a táblát");
-        }*/
+
         SceneOpen("food.fxml", "Ételek", this.btnExit);
     }
 
