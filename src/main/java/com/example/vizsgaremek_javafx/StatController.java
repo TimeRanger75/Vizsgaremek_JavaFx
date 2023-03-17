@@ -28,7 +28,10 @@ public class StatController extends Controller {
     @FXML
     private Button btnUser;
 
-    private Form[] users;
+    private Look[] looks;
+    private Gender[] genders;
+    private Age ages;
+
     @FXML
     private StackedBarChart stcackedBarChart;
     @FXML
@@ -37,59 +40,27 @@ public class StatController extends Controller {
     @FXML
     private void initialize() throws IOException {
         loadForm();
-        /*
-        int males=0;
-        int females=0;
-        int above_25=0;
-        int below_25=0;
-        for (User_form user :
-                users) {
-            switch (user.getGender()){
-                case "Male":
-                    males++;
-                    break;
-                case "Female":
-                    females++;
-                    break;
-                default:break;
-            }
-            int signum= Integer.signum(user.getAge()-25);
-            switch (signum){
-                case -1:
-                    below_25++;
-                    break;
-                case 0:
-                    above_25++;
-                    break;
-                case 1:
-                    above_25++;
-                    break;
-                default:break;
-            }
-        }
-        */
+        loadGender();
+        loadAge();
+
         XYChart.Series series1=new XYChart.Series();
         XYChart.Series series2=new XYChart.Series();
 
         series1.setName("Nem");
-        for (Form user : users) {
-            series1.getData().add(new XYChart.Data(user.getGender(),user.getGenderCount()));
+        for (Gender gender : genders) {
+            series1.getData().add(new XYChart.Data(gender.getGender(),gender.getCount()));
         }
-        //series1.getData().add(new XYChart.Data("Férfi", males));
-        //series1.getData().add(new XYChart.Data("Nő", females));
 
         series2.setName("Kor");
-        for (Form user : users) {
-            series1.getData().add(new XYChart.Data(user.getAge(),user.getAgeCount()));
-        }
-        //series2.getData().add(new XYChart.Data("25 évnél idősebb",above_25));
-        //series2.getData().add(new XYChart.Data("25 évnél fiatalabb",below_25));
+        series2.getData().add(new XYChart.Data("25 évnél idősebbek", ages.getAbove_25()));
+        series2.getData().add(new XYChart.Data("25 évnél fiatalabbak", ages.getBelow_25()));
+
 
         stcackedBarChart.getData().addAll(series1, series2);
 
         ObservableList<PieChart.Data> pieChartData=FXCollections.observableArrayList();
-        for (Form user : users) {
-           pieChartData.add( new PieChart.Data(user.getLook(), user.getLookCount()));
+        for (Look look : looks) {
+           pieChartData.add( new PieChart.Data(look.getLook(), look.getCount()));
         }
         pieChart.setData(pieChartData);
         pieChart.setTitle("Testalkat");
@@ -101,7 +72,22 @@ public class StatController extends Controller {
         Response response=RequestHandler.get(Look.LOOK_URL);
         String content= response.getContent();
         Gson converter=new Gson();
-        users=converter.fromJson(content, Form[].class);
+        looks=converter.fromJson(content, Look[].class);
+
+    }
+
+    private void loadGender()throws IOException{
+        Response response=RequestHandler.get(Gender.GENDER_URL);
+        String content=response.getContent();
+        Gson converter=new Gson();
+        genders=converter.fromJson(content, Gender[].class);
+    }
+
+    private void loadAge() throws IOException{
+        Response response=RequestHandler.get(Age.AGE_URL);
+        String content=response.getContent();
+        Gson converter=new Gson();
+        ages=converter.fromJson(content, Age.class);
 
     }
 

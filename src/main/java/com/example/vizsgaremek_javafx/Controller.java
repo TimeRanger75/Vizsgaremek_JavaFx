@@ -1,5 +1,6 @@
 package com.example.vizsgaremek_javafx;
 
+import com.google.gson.Gson;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -42,7 +43,9 @@ public abstract class Controller {
             stage.setScene(scene);
             stage.show();
         }catch (IOException e){
-            error("Nem lehet elérni a táblát");
+            e.printStackTrace();
+            error("Nem lehet elérni a táblát: "+ e.getMessage());
         }
     }
+
 }

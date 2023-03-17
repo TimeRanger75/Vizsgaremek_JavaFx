@@ -14,15 +14,7 @@ public class Look {
         return look;
     }
 
-    public void setLook(String look) {
-        this.look = look;
-    }
-
     public int getCount() {
         return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
     }
 }
