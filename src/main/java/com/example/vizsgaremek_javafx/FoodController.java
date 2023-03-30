@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -40,6 +41,8 @@ public class FoodController extends Controller {
     private Button btnUpdate;
     @FXML
     private TableColumn<Food, Number> id;
+    @FXML
+    private GridPane asd;
 
 
     @FXML

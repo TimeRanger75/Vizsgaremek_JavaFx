@@ -38,13 +38,12 @@ public class LoginController extends Controller{
     }
 
     @FXML
-    public void loginClick(ActionEvent actionEvent) throws IOException {
+    public void loginClick(ActionEvent actionEvent){
         for (Admin admin: admins) {
             if (admin.getUsername().equals(textFieldName.getText().trim()) && BCrypt.checkpw(textFieldPass.getText().trim(), admin.getPassword())){
-;               SceneOpen("admin.fxml", "Felhasználók", this.btnLogin);
+               SceneOpen("admin.fxml", "Felhasználók", this.btnLogin);
             }
         }
-
     }
 
     private void  loadAdmin()throws IOException{
