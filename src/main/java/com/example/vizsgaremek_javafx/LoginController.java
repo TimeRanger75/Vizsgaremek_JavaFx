@@ -35,7 +35,6 @@ public class LoginController extends Controller{
     @FXML
     private void initialize() throws IOException{
         loadAdmin();
-
     }
 
     @FXML

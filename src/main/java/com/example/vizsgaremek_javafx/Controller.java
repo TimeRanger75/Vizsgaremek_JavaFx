@@ -1,6 +1,5 @@
 package com.example.vizsgaremek_javafx;
 
-import com.google.gson.Gson;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -26,7 +25,7 @@ public abstract class Controller {
 
     protected Optional<ButtonType> alert(Alert.AlertType alertType, String title, String header_text, String content_text){
         Alert alert=new Alert(alertType);
-        alert.setTitle(header_text);
+        alert.setTitle(title);
         alert.setHeaderText(header_text);
         alert.setContentText(content_text);
         return alert.showAndWait();
