@@ -33,16 +33,22 @@ public class LoginController extends Controller{
 
 
     @FXML
-    private void initialize() throws IOException{
+    private void initialize() throws IOException {
         loadAdmin();
     }
 
     @FXML
     public void loginClick(ActionEvent actionEvent){
+        boolean log=false;
         for (Admin admin: admins) {
             if (admin.getUsername().equals(textFieldName.getText().trim()) && BCrypt.checkpw(textFieldPass.getText().trim(), admin.getPassword())){
-               SceneOpen("admin.fxml", "Felhasználók", this.btnLogin);
+               log=true;
             }
+        }
+        if (!log){
+            warning("Hibás adatok");
+        }else{
+            SceneOpen("admin.fxml", "Felhasználók", this.btnLogin);
         }
     }
 

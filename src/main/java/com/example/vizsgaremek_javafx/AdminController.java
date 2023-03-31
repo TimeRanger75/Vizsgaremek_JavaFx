@@ -29,9 +29,10 @@ public class AdminController extends Controller {
     private TableColumn<User, String> email;
     @FXML
     private TableView tableUsers;
-
-
     @FXML
+    private Button settings;
+
+    @Deprecated
     private void initialize(){
         name.setCellValueFactory(new PropertyValueFactory<>("name"));
         username.setCellValueFactory(new PropertyValueFactory<>("username"));
@@ -74,5 +75,9 @@ public class AdminController extends Controller {
     public void clickExit(ActionEvent actionEvent) {
         Stage stage = (Stage) this.btnExit.getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    public void clickSettings(ActionEvent actionEvent) {
     }
 }

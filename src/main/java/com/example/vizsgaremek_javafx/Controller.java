@@ -47,4 +47,21 @@ public abstract class Controller {
         }
     }
 
+
+    protected void SceneOpen(String fmxl, String title, int width, int height){
+        try {
+            FXMLLoader fxmlLoader=new FXMLLoader(App.class.getResource(fmxl));
+            Scene scene=new Scene(fxmlLoader.load(),width, height);
+            Stage stage=new Stage();
+            //Stage opened = (Stage) btn.getScene().getWindow();
+            //opened.close();
+            stage.setTitle(title);
+            stage.setScene(scene);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+            error("Nem lehet elérni a táblát: "+ e.getMessage());
+        }
+    }
+
 }
