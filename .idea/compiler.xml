@@ -9,8 +9,5 @@
         <module name="Vizsgaremek_JavaFx" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Vizsgaremek_JavaFx" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

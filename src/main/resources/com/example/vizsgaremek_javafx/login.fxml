@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="gridpane" stylesheets="@style.css" hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2f4f4f; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.LoginController">
+<GridPane fx:id="gridpane" hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.LoginController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="130.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="428.0" minWidth="10.0" prefWidth="323.0" />
@@ -24,7 +24,7 @@
    <children>
       <TextField fx:id="textFieldName" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
       <PasswordField fx:id="textFieldPass" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-      <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginClick" style="-fx-text-fill: #228b22; -fx-background-color: #000000; -fx-border-color: #ffffff;" text="Bejelentkezés" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+      <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginClick" text="Bejelentkezés" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
       <Label text="Név" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
       <Label text="Jelszó" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
    </children>

@@ -32,7 +32,7 @@ public class AdminController extends Controller {
     @FXML
     private Button settings;
 
-    @Deprecated
+    @FXML
     private void initialize(){
         name.setCellValueFactory(new PropertyValueFactory<>("name"));
         username.setCellValueFactory(new PropertyValueFactory<>("username"));
