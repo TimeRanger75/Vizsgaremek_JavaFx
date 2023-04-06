@@ -65,7 +65,7 @@ public class FoodController extends Controller {
     }
 
     private void loadFoods()throws IOException{
-        Response response=RequestHandler.get(Food.FOOD_URL);
+        Response response=RequestHandler.get(BASE_URL+"/food");
         String content=response.getContent();
         Gson converter=new Gson();
         Food[] foods=converter.fromJson(content, Food[].class);

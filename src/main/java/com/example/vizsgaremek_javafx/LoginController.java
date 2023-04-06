@@ -53,7 +53,7 @@ public class LoginController extends Controller{
     }
 
     private void  loadAdmin()throws IOException{
-        Response response=RequestHandler.get(Admin.ADMIN_URL);
+        Response response=RequestHandler.get(BASE_URL+"/admin");
         String content=response.getContent();
         Gson converter=new Gson();
         admins=converter.fromJson(content, Admin[].class);

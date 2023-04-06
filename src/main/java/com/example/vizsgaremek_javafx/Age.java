@@ -1,7 +1,6 @@
 package com.example.vizsgaremek_javafx;
 
 public class Age {
-    public static final String AGE_URL = "http://localhost:3000/calculator/age/search";
 
     private int below_25;
     private int above_25;

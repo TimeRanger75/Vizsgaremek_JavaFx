@@ -70,7 +70,7 @@ public class UpdatefoodController extends Controller {
         Gson converter=new Gson();
         String json= converter.toJson(this.food);
         try {
-            String url  = Food.FOOD_URL+"/"+this.food.getId();
+            String url  = BASE_URL+"/food/"+this.food.getId();
             Response response= RequestHandler.put(url, json);
             if (response.getResponseCode()==200){
                 Stage stage=(Stage) this.btnUpdate.getScene().getWindow();

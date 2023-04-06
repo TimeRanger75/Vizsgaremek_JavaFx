@@ -1,7 +1,6 @@
 package com.example.vizsgaremek_javafx;
 
 public class Admin {
-    public static  final String ADMIN_URL="http://localhost:3000/admin";
 
     private String username;
     private String password;

@@ -2,7 +2,6 @@ package com.example.vizsgaremek_javafx;
 
 public class Food {
 
-    public static final String FOOD_URL="http://localhost:3000/food";
     private String name;
     private int id;
     private double calorie;

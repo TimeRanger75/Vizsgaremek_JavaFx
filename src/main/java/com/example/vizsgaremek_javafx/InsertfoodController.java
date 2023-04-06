@@ -61,7 +61,7 @@ public class InsertfoodController extends Controller {
         Gson converter=new Gson();
         String json=converter.toJson(newFood);
         try{
-            Response response=RequestHandler.post(Food.FOOD_URL, json);
+            Response response=RequestHandler.post(BASE_URL+"/food", json);
             if (response.getResponseCode()==201){
                 nameField.setText("");
                 carboField.setText("0");

@@ -69,7 +69,7 @@ public class StatController extends Controller {
     }
 
     private void loadForm()throws IOException{
-        Response response=RequestHandler.get(Look.LOOK_URL);
+        Response response=RequestHandler.get(BASE_URL+"/calculator/body/search");
         String content= response.getContent();
         Gson converter=new Gson();
         looks=converter.fromJson(content, Look[].class);
@@ -77,14 +77,14 @@ public class StatController extends Controller {
     }
 
     private void loadGender()throws IOException{
-        Response response=RequestHandler.get(Gender.GENDER_URL);
+        Response response=RequestHandler.get(BASE_URL+"/calculator/gender/search");
         String content=response.getContent();
         Gson converter=new Gson();
         genders=converter.fromJson(content, Gender[].class);
     }
 
     private void loadAge() throws IOException{
-        Response response=RequestHandler.get(Age.AGE_URL);
+        Response response=RequestHandler.get(BASE_URL+"/calculator/age/search");
         String content=response.getContent();
         Gson converter=new Gson();
         ages=converter.fromJson(content, Age.class);

@@ -1,7 +1,6 @@
 package com.example.vizsgaremek_javafx;
 
 public class Look {
-    public static final String LOOK_URL="http://localhost:3000/calculator/body/search";
     private String look;
     private int count;
 

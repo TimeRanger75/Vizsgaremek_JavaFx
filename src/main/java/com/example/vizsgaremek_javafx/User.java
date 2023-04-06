@@ -6,7 +6,6 @@ public class User {
     * Contains the user's datas
      */
 
-    public static final String USER_URL="http://localhost:3000/user";
     private String name;
     private String username;
     private String email;

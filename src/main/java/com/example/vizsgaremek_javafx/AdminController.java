@@ -48,7 +48,7 @@ public class AdminController extends Controller {
     }
 
     private void loadUsers()throws IOException {
-        Response response=RequestHandler.get(User.USER_URL);
+        Response response=RequestHandler.get(BASE_URL+"/user");
         String content=response.getContent();
         Gson converter=new Gson();
         User[] users=converter.fromJson(content, User[].class);
