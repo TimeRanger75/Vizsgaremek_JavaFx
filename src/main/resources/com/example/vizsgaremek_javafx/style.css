@@ -10,11 +10,13 @@
     -fx-background-radius: 20px;
     -fx-cursor: hand;
     -fx-text-fill: white;
+    -fx-font-family:"Verdana";
 
 }
 
 .table-view {
     -fx-background-color: transparent;
+    -fx-font-family:"Verdana";
 }
 
 .table-view .column-header-background{
@@ -57,4 +59,17 @@
 
 .label{
     -fx-text-background-color:white;
+    -fx-font-family:"Verdana";
+}
+
+.chart-legend { -fx-background-color: grey; }
+
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 1em;
+}
+
+.chart-bar-label{
+-fx-fill: white;
+    -fx-font-size: 1em;
 }
