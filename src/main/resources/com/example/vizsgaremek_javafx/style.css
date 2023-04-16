@@ -33,16 +33,16 @@
     -fx-border-color: transparent;
     -fx-padding: 2 0 2 10px;
 }
-.table-row-cell: hover {
+.table-row-cell:hover {
     -fx-background-color: #93f9b911;
     -fx-text-background-color:#8BCC58 ;
 }
-.table-row-cell: odd{
+.table-row-cell:odd{
     -fx-background-color: #93f9b911;
     -fx-background-insets: 0, 0 0 1 0;
     -fx-padding: 0.0em;
 }
-.table-row-cell: even{
+.table-row-cell:even{
     -fx-background-color: #1dbbdd11;
     -fx-background-insets: 1, 0 0 1 0;
     -fx-padding: 0.0em;
@@ -52,7 +52,7 @@
     -fx-text-background-color: #646b63;
 }
 
-.table-row-cell: selected {
+.table-row-cell:selected {
     -fx-background-color: rgba(62, 72, 62, 0.75);
     -fx-text-background-color: #8BCC58;
 }
@@ -66,10 +66,5 @@
 
 .chart-pie-label {
     -fx-fill: white;
-    -fx-font-size: 1em;
-}
-
-.chart-bar-label{
--fx-fill: white;
     -fx-font-size: 1em;
 }

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.FoodController">
+<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.FoodController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="151.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="671.0" minWidth="10.0" prefWidth="609.0" />
@@ -25,8 +25,8 @@
             <TableColumn fx:id="id" prefWidth="16.0" text="ID" />
           <TableColumn fx:id="name" prefWidth="186.0" text="Étel neve" />
           <TableColumn fx:id="calorie" prefWidth="102.0" text="Kalória" />
-            <TableColumn fx:id="protein" prefWidth="113.0" text="Protein" />
-            <TableColumn fx:id="carbohydrate" prefWidth="75.0" text="Szénhidrát" />
+            <TableColumn fx:id="carbohydrate" prefWidth="113.0" text="Szénhidrát" />
+            <TableColumn fx:id="protein" prefWidth="75.0" text="Protein" />
             <TableColumn fx:id="fat" prefWidth="75.0" text="Zsír" />
         </columns>
          <GridPane.margin>

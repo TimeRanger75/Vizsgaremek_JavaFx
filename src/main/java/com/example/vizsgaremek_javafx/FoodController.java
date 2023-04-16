@@ -18,13 +18,7 @@ import java.io.IOException;
 
 public class FoodController extends Controller {
     @FXML
-    private Button btnStat;
-    @FXML
     private Button btnExit;
-    @FXML
-    private Button btnUser;
-    @FXML
-    private Button btnInsert;
     @FXML
     private TableColumn<Food, Double> protein;
     @FXML
@@ -38,11 +32,7 @@ public class FoodController extends Controller {
     @FXML
     private TableView tableFoods;
     @FXML
-    private Button btnUpdate;
-    @FXML
     private TableColumn<Food, Number> id;
-    @FXML
-    private GridPane asd;
 
 
     @FXML
@@ -72,6 +62,7 @@ public class FoodController extends Controller {
         tableFoods.getItems().clear();
         for (Food food: foods){
             tableFoods.getItems().add(food);
+            System.out.println(food.getCalorie()+"\n");
         }
     }
 
@@ -135,10 +126,12 @@ public class FoodController extends Controller {
             stage.setOnHidden(event ->{
                 try {
                     loadFoods();
+                    System.out.println("anyád");
                 }catch (IOException e){
                     error("Nem lehet kapcsolódni a szerverhez");
                 }
             });
+           // loadFoods();
             stage.show();
         }catch (IOException e){
             error("Hiba lépett fel a megnyitás során");

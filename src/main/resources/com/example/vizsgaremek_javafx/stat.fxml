@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane stylesheets="@style.css" fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.StatController">
+<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vizsgaremek_javafx.StatController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="151.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="671.0" minWidth="10.0" prefWidth="609.0" />
@@ -36,9 +36,9 @@
          </effect>
       </Button>
       <Button fx:id="btnExit" mnemonicParsing="false" onAction="#clickExit" text="Kilépés" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-      <StackedBarChart fx:id="stcackedBarChart" title="Felhasználók" GridPane.columnIndex="1">
+      <StackedBarChart fx:id="stcackedBarChart" stylesheets="@style.css" title="Felhasználók" GridPane.columnIndex="1">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis side="BOTTOM" stylesheets="@style.css" />
         </xAxis>
         <yAxis>
           <NumberAxis autoRanging="false" label="Fő" minorTickCount="2" side="LEFT" tickLength="10.0" tickUnit="2.0" upperBound="20.0" />

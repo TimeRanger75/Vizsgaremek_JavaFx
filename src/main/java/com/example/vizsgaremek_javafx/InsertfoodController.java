@@ -10,8 +10,6 @@ import java.io.IOException;
 
 public class InsertfoodController extends Controller {
     @FXML
-    private Button Feltölt;
-    @FXML
     private TextField fatField;
     @FXML
     private TextField calorieField;

@@ -20,13 +20,7 @@ import java.io.IOException;
 public class StatController extends Controller {
 
     @FXML
-    private Button btnFelvetel;
-    @FXML
-    private GridPane userTable;
-    @FXML
     private Button btnExit;
-    @FXML
-    private Button btnUser;
 
     private Look[] looks;
     private Gender[] genders;

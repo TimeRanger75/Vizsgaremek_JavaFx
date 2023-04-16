@@ -74,6 +74,7 @@ public class UpdatefoodController extends Controller {
             Response response= RequestHandler.put(url, json);
             if (response.getResponseCode()==200){
                 Stage stage=(Stage) this.btnUpdate.getScene().getWindow();
+                System.out.println(this.food.getFat());
                 stage.close();
             }else{
                 error("Hiba történt a frissítés során");

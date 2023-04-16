@@ -16,10 +16,6 @@ import java.io.IOException;
 
 public class AdminController extends Controller {
     @FXML
-    private Button btnFelvetel;
-    @FXML
-    private Button btnStat;
-    @FXML
     private Button btnExit;
     @FXML
     private TableColumn<User, String> name;
