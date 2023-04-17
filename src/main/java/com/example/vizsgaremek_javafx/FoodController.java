@@ -62,7 +62,6 @@ public class FoodController extends Controller {
         tableFoods.getItems().clear();
         for (Food food: foods){
             tableFoods.getItems().add(food);
-            System.out.println(food.getCalorie()+"\n");
         }
     }
 
@@ -131,7 +130,6 @@ public class FoodController extends Controller {
                     error("Nem lehet kapcsolódni a szerverhez");
                 }
             });
-           // loadFoods();
             stage.show();
         }catch (IOException e){
             error("Hiba lépett fel a megnyitás során");
