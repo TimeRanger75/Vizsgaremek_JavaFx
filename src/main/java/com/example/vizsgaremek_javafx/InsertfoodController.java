@@ -28,6 +28,7 @@ public class InsertfoodController extends Controller {
 
     @FXML
     private void initialize(){
+        nameField.setText("");
         proteinField.setText("0");
         carboField.setText("0");
         calorieField.setText("0");
@@ -61,11 +62,7 @@ public class InsertfoodController extends Controller {
         try{
             Response response=RequestHandler.post(BASE_URL+"/food", json);
             if (response.getResponseCode()==201){
-                nameField.setText("");
-                carboField.setText("0");
-                calorieField.setText("0");
-                fatField.setText("0");
-                proteinField.setText("0");
+                initialize();
             }
         }catch (IOException e){
             error("A szerverhez való kapcsolódás sikertelen", e.getMessage());

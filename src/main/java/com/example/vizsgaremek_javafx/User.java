@@ -2,10 +2,6 @@ package com.example.vizsgaremek_javafx;
 
 public class User {
 
-    /**
-    * Contains the user's datas
-     */
-
     private String name;
     private String username;
     private String email;
