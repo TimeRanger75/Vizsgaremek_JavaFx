@@ -1,0 +1,70 @@
+#gridpane{
+    -fx-background-color:#1E1B1B
+}
+
+.button{
+    -fx-margin-top: 0.3em;
+    -fx-padding: 10px;
+    -fx-background-color: #8BCC58;
+    -fx-border-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-family:"Verdana";
+
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-font-family:"Verdana";
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #8BCC58, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color:#8BCC58 ;
+}
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 1, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell{
+    -fx-text-background-color: #646b63;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(62, 72, 62, 0.75);
+    -fx-text-background-color: #8BCC58;
+}
+
+.label{
+    -fx-text-background-color:white;
+    -fx-font-family:"Verdana";
+}
+
+.chart-legend { -fx-background-color: grey; }
+
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 1em;
+}

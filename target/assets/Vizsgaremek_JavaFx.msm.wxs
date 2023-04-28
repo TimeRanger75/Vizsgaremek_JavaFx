@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?><Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Module Codepage="1252" Id="Vizsgaremek_JavaFx_Module" Language="1033" Version="1.0.0.0">
+        <Package Description="Vizsgaremek_JavaFx" Id="3c4c238e-2105-4c84-a880-344046f2b3c5" InstallerVersion="200" Languages="1033" Manufacturer="ACME" Platform="x64" SummaryCodepage="1252"/>
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="_1" Name="Vizsgaremek_JavaFx">
+                <Directory Id="_2" Name="jre">
+                    <Directory Id="_3" Name="bin">
+                        <Component Guid="66fdf05c-2d99-4a05-811b-3b99750c016b" Id="_4" Win64="yes">
+                            <File Id="_4f" KeyPath="yes" Name="api-ms-win-core-console-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-console-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="59eca7bd-2a08-4000-9d35-ea472ae8df9f" Id="_5" Win64="yes">
+                            <File Id="_5f" KeyPath="yes" Name="api-ms-win-core-console-l1-2-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-console-l1-2-0.dll"/>
+                        </Component>
+                        <Component Guid="454780a4-56e6-4aa7-b043-774b0483b76f" Id="_6" Win64="yes">
+                            <File Id="_6f" KeyPath="yes" Name="api-ms-win-core-datetime-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-datetime-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="863a3d1a-4dc8-4382-bb6a-3532467cb5c8" Id="_7" Win64="yes">
+                            <File Id="_7f" KeyPath="yes" Name="api-ms-win-core-debug-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-debug-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="94b3ebd9-e59a-403f-abe1-cd856cb1721e" Id="_8" Win64="yes">
+                            <File Id="_8f" KeyPath="yes" Name="api-ms-win-core-errorhandling-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-errorhandling-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="e81ef702-2da1-43cd-9c71-b72848e53a7d" Id="_9" Win64="yes">
+                            <File Id="_9f" KeyPath="yes" Name="api-ms-win-core-file-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-file-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="1b99beca-7f69-46b1-bf23-f9cbd70e320b" Id="_10" Win64="yes">
+                            <File Id="_10f" KeyPath="yes" Name="api-ms-win-core-file-l1-2-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-file-l1-2-0.dll"/>
+                        </Component>
+                        <Component Guid="c684bcfb-57a5-413a-9cf1-82d2759e2e29" Id="_11" Win64="yes">
+                            <File Id="_11f" KeyPath="yes" Name="api-ms-win-core-file-l2-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-file-l2-1-0.dll"/>
+                        </Component>
+                        <Component Guid="49100a00-c719-4446-af07-a1f2be9f731b" Id="_12" Win64="yes">
+                            <File Id="_12f" KeyPath="yes" Name="api-ms-win-core-handle-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-handle-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="375795fc-65e8-42c5-9176-bdf135386e16" Id="_13" Win64="yes">
+                            <File Id="_13f" KeyPath="yes" Name="api-ms-win-core-heap-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-heap-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="6cec44cd-db4f-462d-906d-04bc0aff1862" Id="_14" Win64="yes">
+                            <File Id="_14f" KeyPath="yes" Name="api-ms-win-core-interlocked-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-interlocked-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="cef44169-f511-4008-820b-3e0a467e8fdd" Id="_15" Win64="yes">
+                            <File Id="_15f" KeyPath="yes" Name="api-ms-win-core-libraryloader-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-libraryloader-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="980959a4-7b80-44c0-b9f3-ca79859b582a" Id="_16" Win64="yes">
+                            <File Id="_16f" KeyPath="yes" Name="api-ms-win-core-localization-l1-2-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-localization-l1-2-0.dll"/>
+                        </Component>
+                        <Component Guid="5657cbd8-7e9a-48bc-8666-551aee904281" Id="_17" Win64="yes">
+                            <File Id="_17f" KeyPath="yes" Name="api-ms-win-core-memory-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-memory-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="faad471d-f1ea-4e38-bd30-cc46e414fbc1" Id="_18" Win64="yes">
+                            <File Id="_18f" KeyPath="yes" Name="api-ms-win-core-namedpipe-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-namedpipe-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="2b233753-aa86-427c-a3fc-4a8eab38baf1" Id="_19" Win64="yes">
+                            <File Id="_19f" KeyPath="yes" Name="api-ms-win-core-processenvironment-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-processenvironment-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="5f9409bd-8607-43ff-85c5-26f55c46ca13" Id="_20" Win64="yes">
+                            <File Id="_20f" KeyPath="yes" Name="api-ms-win-core-processthreads-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-processthreads-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="a11d8f9a-60d9-4b0a-90e4-b4ba3955234f" Id="_21" Win64="yes">
+                            <File Id="_21f" KeyPath="yes" Name="api-ms-win-core-processthreads-l1-1-1.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-processthreads-l1-1-1.dll"/>
+                        </Component>
+                        <Component Guid="634840d7-1fca-4d9a-9a35-238b9c8ca45a" Id="_22" Win64="yes">
+                            <File Id="_22f" KeyPath="yes" Name="api-ms-win-core-profile-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-profile-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="63f93d4b-b8a1-4c64-a687-b094b175640b" Id="_23" Win64="yes">
+                            <File Id="_23f" KeyPath="yes" Name="api-ms-win-core-rtlsupport-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-rtlsupport-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="fd0552d9-3558-4502-b96a-a023353fe0f9" Id="_24" Win64="yes">
+                            <File Id="_24f" KeyPath="yes" Name="api-ms-win-core-string-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-string-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="6cbc0c4f-7201-4deb-9be0-ea11e8be7f8f" Id="_25" Win64="yes">
+                            <File Id="_25f" KeyPath="yes" Name="api-ms-win-core-synch-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-synch-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="07270d75-e413-4d14-bc1a-5d3256b0b75e" Id="_26" Win64="yes">
+                            <File Id="_26f" KeyPath="yes" Name="api-ms-win-core-synch-l1-2-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-synch-l1-2-0.dll"/>
+                        </Component>
+                        <Component Guid="ecd9dc8b-a1ff-400e-90b7-ad7dc5b3175e" Id="_27" Win64="yes">
+                            <File Id="_27f" KeyPath="yes" Name="api-ms-win-core-sysinfo-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-sysinfo-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="0226f8f2-763d-4549-be85-a60226b30935" Id="_28" Win64="yes">
+                            <File Id="_28f" KeyPath="yes" Name="api-ms-win-core-timezone-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-timezone-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="fc7ccfd9-6046-43bd-81b5-d614f0825315" Id="_29" Win64="yes">
+                            <File Id="_29f" KeyPath="yes" Name="api-ms-win-core-util-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-core-util-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="8e9d605c-3652-49bf-9808-8375c9f3b56a" Id="_30" Win64="yes">
+                            <File Id="_30f" KeyPath="yes" Name="api-ms-win-crt-conio-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-conio-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="8904fc2a-6ce8-4395-bd70-459ca9776b24" Id="_31" Win64="yes">
+                            <File Id="_31f" KeyPath="yes" Name="api-ms-win-crt-convert-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-convert-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="9336072a-28a0-47db-bd0b-ad9a101e7cb8" Id="_32" Win64="yes">
+                            <File Id="_32f" KeyPath="yes" Name="api-ms-win-crt-environment-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-environment-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="2430d624-7dc5-4292-b07a-7835b65db633" Id="_33" Win64="yes">
+                            <File Id="_33f" KeyPath="yes" Name="api-ms-win-crt-filesystem-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-filesystem-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="dd91ba90-4ddb-4334-b9e0-d9f49f4485f8" Id="_34" Win64="yes">
+                            <File Id="_34f" KeyPath="yes" Name="api-ms-win-crt-heap-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-heap-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="dc6ddcc9-b0af-44e5-8012-78ec6ffb87aa" Id="_35" Win64="yes">
+                            <File Id="_35f" KeyPath="yes" Name="api-ms-win-crt-locale-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-locale-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="c91266a3-ea7d-4152-9547-06c1000b50cc" Id="_36" Win64="yes">
+                            <File Id="_36f" KeyPath="yes" Name="api-ms-win-crt-math-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-math-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="d9bcee8f-eaad-411a-ba9b-7d5b75b4ba15" Id="_37" Win64="yes">
+                            <File Id="_37f" KeyPath="yes" Name="api-ms-win-crt-multibyte-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-multibyte-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="886a70f1-336f-4f68-952c-2106dd43747c" Id="_38" Win64="yes">
+                            <File Id="_38f" KeyPath="yes" Name="api-ms-win-crt-private-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-private-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="fff3e5fb-54c9-4c22-b04b-c57fab2dcda1" Id="_39" Win64="yes">
+                            <File Id="_39f" KeyPath="yes" Name="api-ms-win-crt-process-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-process-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="a450797c-1d95-4522-bd31-5bc0d9b53648" Id="_40" Win64="yes">
+                            <File Id="_40f" KeyPath="yes" Name="api-ms-win-crt-runtime-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-runtime-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="e032f009-2f00-498c-8542-d8a45059f17f" Id="_41" Win64="yes">
+                            <File Id="_41f" KeyPath="yes" Name="api-ms-win-crt-stdio-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-stdio-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="1884a7d9-0e73-4218-a099-93e275d4970d" Id="_42" Win64="yes">
+                            <File Id="_42f" KeyPath="yes" Name="api-ms-win-crt-string-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-string-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="a0e592da-9cb7-4217-9cbc-592bfa50dbc0" Id="_43" Win64="yes">
+                            <File Id="_43f" KeyPath="yes" Name="api-ms-win-crt-time-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-time-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="6cf9dcd9-19db-485b-9793-4c0dd73f7229" Id="_44" Win64="yes">
+                            <File Id="_44f" KeyPath="yes" Name="api-ms-win-crt-utility-l1-1-0.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\api-ms-win-crt-utility-l1-1-0.dll"/>
+                        </Component>
+                        <Component Guid="2a5150b6-f007-4ed5-ad08-3a6eb9b23368" Id="_45" Win64="yes">
+                            <File Id="_45f" KeyPath="yes" Name="attach.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\attach.dll"/>
+                        </Component>
+                        <Component Guid="5967cb5a-3889-42c2-8787-02b30019d7f2" Id="_46" Win64="yes">
+                            <File Id="_46f" KeyPath="yes" Name="awt.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\awt.dll"/>
+                        </Component>
+                        <Component Guid="fb3cc313-0521-4798-b7d1-151215ad6091" Id="_47" Win64="yes">
+                            <File Id="_47f" KeyPath="yes" Name="dt_shmem.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\dt_shmem.dll"/>
+                        </Component>
+                        <Component Guid="9ddb1d99-e535-47e2-8e07-e8e136a6f7fc" Id="_48" Win64="yes">
+                            <File Id="_48f" KeyPath="yes" Name="dt_socket.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\dt_socket.dll"/>
+                        </Component>
+                        <Component Guid="f4432d91-8296-4e81-b954-cd7b530c0197" Id="_49" Win64="yes">
+                            <File Id="_49f" KeyPath="yes" Name="fontmanager.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\fontmanager.dll"/>
+                        </Component>
+                        <Component Guid="40537214-beff-4a06-a4cb-b87a4442e24e" Id="_50" Win64="yes">
+                            <File Id="_50f" KeyPath="yes" Name="freetype.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\freetype.dll"/>
+                        </Component>
+                        <Component Guid="a808a3fa-d376-4eb9-8173-5a2ed9f35d0e" Id="_51" Win64="yes">
+                            <File Id="_51f" KeyPath="yes" Name="instrument.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\instrument.dll"/>
+                        </Component>
+                        <Component Guid="6ae0f45c-cc41-461d-823f-55725c581fe1" Id="_52" Win64="yes">
+                            <File Id="_52f" KeyPath="yes" Name="j2gss.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\j2gss.dll"/>
+                        </Component>
+                        <Component Guid="20f3aee8-b182-452f-917c-1eca6af7fee5" Id="_53" Win64="yes">
+                            <File Id="_53f" KeyPath="yes" Name="j2pcsc.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\j2pcsc.dll"/>
+                        </Component>
+                        <Component Guid="7e3a4ffc-da9e-43d5-b266-2a3a3cbefa51" Id="_54" Win64="yes">
+                            <File Id="_54f" KeyPath="yes" Name="j2pkcs11.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\j2pkcs11.dll"/>
+                        </Component>
+                        <Component Guid="2c79fd77-31af-4c32-8d70-dff22dee616f" Id="_55" Win64="yes">
+                            <File Id="_55f" KeyPath="yes" Name="jaas.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jaas.dll"/>
+                        </Component>
+                        <Component Guid="81386120-0819-430d-939d-7c4e8498e925" Id="_56" Win64="yes">
+                            <File Id="_56f" KeyPath="yes" Name="jabswitch.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jabswitch.exe"/>
+                        </Component>
+                        <Component Guid="9648e9d2-d9e5-4cd4-bb95-eb63ff8827bd" Id="_57" Win64="yes">
+                            <File Id="_57f" KeyPath="yes" Name="jaccessinspector.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jaccessinspector.exe"/>
+                        </Component>
+                        <Component Guid="0f3638f7-d747-4107-b1cc-01ee3ed3634c" Id="_58" Win64="yes">
+                            <File Id="_58f" KeyPath="yes" Name="jaccesswalker.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jaccesswalker.exe"/>
+                        </Component>
+                        <Component Guid="34994c9f-8697-429b-979a-a076543efe84" Id="_59" Win64="yes">
+                            <File Id="_59f" KeyPath="yes" Name="jar.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jar.exe"/>
+                        </Component>
+                        <Component Guid="2a43e34d-69e4-4806-980e-870c3c4a3736" Id="_60" Win64="yes">
+                            <File Id="_60f" KeyPath="yes" Name="jarsigner.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jarsigner.exe"/>
+                        </Component>
+                        <Component Guid="fa285452-a8fa-4eed-85f9-bd1fb20b0ee1" Id="_61" Win64="yes">
+                            <File Id="_61f" KeyPath="yes" Name="java.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\java.dll"/>
+                        </Component>
+                        <Component Guid="9bd8d102-0068-43d1-9891-44c8b98b273e" Id="_62" Win64="yes">
+                            <File Id="_62f" KeyPath="yes" Name="java.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\java.exe"/>
+                        </Component>
+                        <Component Guid="f063d13b-8e17-4afb-9937-e5df02cdaff1" Id="_63" Win64="yes">
+                            <File Id="_63f" KeyPath="yes" Name="javaaccessbridge.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\javaaccessbridge.dll"/>
+                        </Component>
+                        <Component Guid="2b256b6d-a936-4a57-8274-ef70543563c3" Id="_64" Win64="yes">
+                            <File Id="_64f" KeyPath="yes" Name="javac.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\javac.exe"/>
+                        </Component>
+                        <Component Guid="61413b50-455a-4417-82b9-d96d79677925" Id="_65" Win64="yes">
+                            <File Id="_65f" KeyPath="yes" Name="javadoc.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\javadoc.exe"/>
+                        </Component>
+                        <Component Guid="24cfcfb7-1da0-4cec-82ff-a0f52028aae9" Id="_66" Win64="yes">
+                            <File Id="_66f" KeyPath="yes" Name="javajpeg.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\javajpeg.dll"/>
+                        </Component>
+                        <Component Guid="8a7302cb-7fab-420a-87f7-cf1f169fa905" Id="_67" Win64="yes">
+                            <File Id="_67f" KeyPath="yes" Name="javap.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\javap.exe"/>
+                        </Component>
+                        <Component Guid="62dd30fb-45f9-4ac2-90bd-a6ce905924c9" Id="_68" Win64="yes">
+                            <File Id="_68f" KeyPath="yes" Name="javaw.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\javaw.exe"/>
+                        </Component>
+                        <Component Guid="9cfe2487-e450-4444-90a4-8dae427576fb" Id="_69" Win64="yes">
+                            <File Id="_69f" KeyPath="yes" Name="jawt.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jawt.dll"/>
+                        </Component>
+                        <Component Guid="c5d3950d-dd36-4667-8eef-0e03b2ba0f65" Id="_70" Win64="yes">
+                            <File Id="_70f" KeyPath="yes" Name="jcmd.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jcmd.exe"/>
+                        </Component>
+                        <Component Guid="e74faf4b-7766-4716-8128-6fd0e33daee3" Id="_71" Win64="yes">
+                            <File Id="_71f" KeyPath="yes" Name="jconsole.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jconsole.exe"/>
+                        </Component>
+                        <Component Guid="6101bf3a-6f3e-4db8-b0c5-eb1fe879e58e" Id="_72" Win64="yes">
+                            <File Id="_72f" KeyPath="yes" Name="jdb.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jdb.exe"/>
+                        </Component>
+                        <Component Guid="4285d756-a7e1-4f91-a180-93cf0d6997fd" Id="_73" Win64="yes">
+                            <File Id="_73f" KeyPath="yes" Name="jdeprscan.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jdeprscan.exe"/>
+                        </Component>
+                        <Component Guid="0ff36394-0719-42a3-b1dd-06cb5af9fc41" Id="_74" Win64="yes">
+                            <File Id="_74f" KeyPath="yes" Name="jdeps.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jdeps.exe"/>
+                        </Component>
+                        <Component Guid="7e7f0f68-277d-4aee-bd6b-a9f3c0ccd7b4" Id="_75" Win64="yes">
+                            <File Id="_75f" KeyPath="yes" Name="jdwp.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jdwp.dll"/>
+                        </Component>
+                        <Component Guid="05194ea9-5d15-4283-8e0a-cf8503aa41a2" Id="_76" Win64="yes">
+                            <File Id="_76f" KeyPath="yes" Name="jfr.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jfr.exe"/>
+                        </Component>
+                        <Component Guid="f2098a41-3952-4d54-b314-168c33f62413" Id="_77" Win64="yes">
+                            <File Id="_77f" KeyPath="yes" Name="jhsdb.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jhsdb.exe"/>
+                        </Component>
+                        <Component Guid="fe05ec57-9f76-4ece-a633-a3a5d516309a" Id="_78" Win64="yes">
+                            <File Id="_78f" KeyPath="yes" Name="jimage.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jimage.dll"/>
+                        </Component>
+                        <Component Guid="b6719af8-8199-47ce-90ad-a1a92e5e6adb" Id="_79" Win64="yes">
+                            <File Id="_79f" KeyPath="yes" Name="jimage.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jimage.exe"/>
+                        </Component>
+                        <Component Guid="64ebdf29-1934-4a19-b97e-11648cde7980" Id="_80" Win64="yes">
+                            <File Id="_80f" KeyPath="yes" Name="jinfo.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jinfo.exe"/>
+                        </Component>
+                        <Component Guid="9ca3972c-afd4-4afe-91a2-5e517cafdf5f" Id="_81" Win64="yes">
+                            <File Id="_81f" KeyPath="yes" Name="jli.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jli.dll"/>
+                        </Component>
+                        <Component Guid="065bec9c-38f8-4207-b9e4-cdc6acc09ac2" Id="_82" Win64="yes">
+                            <File Id="_82f" KeyPath="yes" Name="jlink.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jlink.exe"/>
+                        </Component>
+                        <Component Guid="a19690d0-9927-4b6f-b135-e36997fe5dd0" Id="_83" Win64="yes">
+                            <File Id="_83f" KeyPath="yes" Name="jmap.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jmap.exe"/>
+                        </Component>
+                        <Component Guid="027faead-523b-48d3-9d74-5f2fa91d35b2" Id="_84" Win64="yes">
+                            <File Id="_84f" KeyPath="yes" Name="jmod.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jmod.exe"/>
+                        </Component>
+                        <Component Guid="366452e5-c6c9-4289-a324-d0dda88a550f" Id="_85" Win64="yes">
+                            <File Id="_85f" KeyPath="yes" Name="jpackage.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jpackage.dll"/>
+                        </Component>
+                        <Component Guid="0635b2b7-6ebd-47bd-96a1-458b22e836ab" Id="_86" Win64="yes">
+                            <File Id="_86f" KeyPath="yes" Name="jpackage.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jpackage.exe"/>
+                        </Component>
+                        <Component Guid="ddaf8f1f-5562-4512-b753-b34bb15ef147" Id="_87" Win64="yes">
+                            <File Id="_87f" KeyPath="yes" Name="jps.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jps.exe"/>
+                        </Component>
+                        <Component Guid="3493ccb4-fc7a-4fc7-894c-f08c4d662c84" Id="_88" Win64="yes">
+                            <File Id="_88f" KeyPath="yes" Name="jrunscript.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jrunscript.exe"/>
+                        </Component>
+                        <Component Guid="7010c1af-8423-4c5b-82f6-828d6e707ff1" Id="_89" Win64="yes">
+                            <File Id="_89f" KeyPath="yes" Name="jshell.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jshell.exe"/>
+                        </Component>
+                        <Component Guid="d921b5cf-67b3-48a5-a6e0-f845d0872547" Id="_90" Win64="yes">
+                            <File Id="_90f" KeyPath="yes" Name="jsound.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jsound.dll"/>
+                        </Component>
+                        <Component Guid="fb65744d-ba78-4787-b478-8085016d835a" Id="_91" Win64="yes">
+                            <File Id="_91f" KeyPath="yes" Name="jstack.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jstack.exe"/>
+                        </Component>
+                        <Component Guid="6d9b6cd7-4703-45a8-b1bc-aa8b6f6a37b3" Id="_92" Win64="yes">
+                            <File Id="_92f" KeyPath="yes" Name="jstat.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jstat.exe"/>
+                        </Component>
+                        <Component Guid="48799106-0192-49a3-b6c0-3c2e47a3815e" Id="_93" Win64="yes">
+                            <File Id="_93f" KeyPath="yes" Name="jstatd.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jstatd.exe"/>
+                        </Component>
+                        <Component Guid="09ad4b4e-175d-4c9a-86f8-f3f803952c07" Id="_94" Win64="yes">
+                            <File Id="_94f" KeyPath="yes" Name="jsvml.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\jsvml.dll"/>
+                        </Component>
+                        <Component Guid="d5f97b37-0091-48fa-9fe7-31c2a325a27a" Id="_95" Win64="yes">
+                            <File Id="_95f" KeyPath="yes" Name="keytool.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\keytool.exe"/>
+                        </Component>
+                        <Component Guid="b1cfac74-1db8-49ae-a750-1a2e12f50cd3" Id="_96" Win64="yes">
+                            <File Id="_96f" KeyPath="yes" Name="kinit.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\kinit.exe"/>
+                        </Component>
+                        <Component Guid="cbdc02fc-7c36-4ced-98aa-b27cd9cd825e" Id="_97" Win64="yes">
+                            <File Id="_97f" KeyPath="yes" Name="klist.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\klist.exe"/>
+                        </Component>
+                        <Component Guid="9ed0250d-02da-41c3-9eb1-b2d4a6f48668" Id="_98" Win64="yes">
+                            <File Id="_98f" KeyPath="yes" Name="ktab.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\ktab.exe"/>
+                        </Component>
+                        <Component Guid="62277831-949a-4a90-93e8-ffc078fb5f03" Id="_99" Win64="yes">
+                            <File Id="_99f" KeyPath="yes" Name="lcms.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\lcms.dll"/>
+                        </Component>
+                        <Component Guid="9753af3b-512a-43fb-b092-b7c01aabcf62" Id="_100" Win64="yes">
+                            <File Id="_100f" KeyPath="yes" Name="le.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\le.dll"/>
+                        </Component>
+                        <Component Guid="7036c9c8-c10e-4753-bd5b-cb8b7c3d859e" Id="_101" Win64="yes">
+                            <File Id="_101f" KeyPath="yes" Name="management.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\management.dll"/>
+                        </Component>
+                        <Component Guid="873b386d-8fa8-4fa5-b4f4-4cf65919cdfc" Id="_102" Win64="yes">
+                            <File Id="_102f" KeyPath="yes" Name="management_agent.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\management_agent.dll"/>
+                        </Component>
+                        <Component Guid="5349b923-8d4d-46f0-b37e-91f4f45fafa6" Id="_103" Win64="yes">
+                            <File Id="_103f" KeyPath="yes" Name="management_ext.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\management_ext.dll"/>
+                        </Component>
+                        <Component Guid="e9c5c575-5cc3-42c4-a6b7-129ace4c94c3" Id="_104" Win64="yes">
+                            <File Id="_104f" KeyPath="yes" Name="mlib_image.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\mlib_image.dll"/>
+                        </Component>
+                        <Component Guid="853141e4-5cb6-4cf1-9ef6-45acedb58276" Id="_105" Win64="yes">
+                            <File Id="_105f" KeyPath="yes" Name="msvcp140.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\msvcp140.dll"/>
+                        </Component>
+                        <Component Guid="64daa5c4-1012-4f9b-bf31-02dc6f754f01" Id="_106" Win64="yes">
+                            <File Id="_106f" KeyPath="yes" Name="net.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\net.dll"/>
+                        </Component>
+                        <Component Guid="896c9d17-0373-463f-93c3-292a9e7c693d" Id="_107" Win64="yes">
+                            <File Id="_107f" KeyPath="yes" Name="nio.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\nio.dll"/>
+                        </Component>
+                        <Component Guid="59bad1f7-b1fb-40c2-a573-670cc45ba305" Id="_108" Win64="yes">
+                            <File Id="_108f" KeyPath="yes" Name="prefs.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\prefs.dll"/>
+                        </Component>
+                        <Component Guid="595e594a-eced-4a18-a57d-82d2d50345fc" Id="_109" Win64="yes">
+                            <File Id="_109f" KeyPath="yes" Name="rmi.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\rmi.dll"/>
+                        </Component>
+                        <Component Guid="79a5910c-37c4-41dc-86de-f0dc08c49da3" Id="_110" Win64="yes">
+                            <File Id="_110f" KeyPath="yes" Name="rmiregistry.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\rmiregistry.exe"/>
+                        </Component>
+                        <Component Guid="f3d9b0d8-60c3-490d-b2ce-8f55b6ee0c7f" Id="_111" Win64="yes">
+                            <File Id="_111f" KeyPath="yes" Name="saproc.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\saproc.dll"/>
+                        </Component>
+                        <Component Guid="9460f0a7-a7c6-4c29-b1e4-387be9a19d08" Id="_112" Win64="yes">
+                            <File Id="_112f" KeyPath="yes" Name="serialver.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\serialver.exe"/>
+                        </Component>
+                        <Directory Id="_113" Name="server">
+                            <Component Guid="86092057-3214-45e0-b791-d70074f7320b" Id="_114" Win64="yes">
+                                <File Id="_114f" KeyPath="yes" Name="jvm.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\server\jvm.dll"/>
+                            </Component>
+                        </Directory>
+                        <Component Guid="06bd8b98-84d5-4220-a76e-853ef5273dcd" Id="_115" Win64="yes">
+                            <File Id="_115f" KeyPath="yes" Name="splashscreen.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\splashscreen.dll"/>
+                        </Component>
+                        <Component Guid="a4438b63-0174-4006-8ebe-690e3b4dc73c" Id="_116" Win64="yes">
+                            <File Id="_116f" KeyPath="yes" Name="sspi_bridge.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\sspi_bridge.dll"/>
+                        </Component>
+                        <Component Guid="0d809ae3-b10d-4476-9c08-81bf82c1939a" Id="_117" Win64="yes">
+                            <File Id="_117f" KeyPath="yes" Name="sunmscapi.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\sunmscapi.dll"/>
+                        </Component>
+                        <Component Guid="ac262b41-3f3d-4d7f-adce-d642860de11f" Id="_118" Win64="yes">
+                            <File Id="_118f" KeyPath="yes" Name="ucrtbase.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\ucrtbase.dll"/>
+                        </Component>
+                        <Component Guid="0b17c91d-7e3d-48c4-a3e3-8b34adb9855b" Id="_119" Win64="yes">
+                            <File Id="_119f" KeyPath="yes" Name="vcruntime140.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\vcruntime140.dll"/>
+                        </Component>
+                        <Component Guid="cfeb651f-c9c9-4dc1-a806-33587f0b5168" Id="_120" Win64="yes">
+                            <File Id="_120f" KeyPath="yes" Name="vcruntime140_1.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\vcruntime140_1.dll"/>
+                        </Component>
+                        <Component Guid="29618f46-fe46-43d5-be34-84d851a401c7" Id="_121" Win64="yes">
+                            <File Id="_121f" KeyPath="yes" Name="verify.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\verify.dll"/>
+                        </Component>
+                        <Component Guid="b4e0b2dd-e1a4-4d30-901f-d803a11c264c" Id="_122" Win64="yes">
+                            <File Id="_122f" KeyPath="yes" Name="w2k_lsa_auth.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\w2k_lsa_auth.dll"/>
+                        </Component>
+                        <Component Guid="f028e99d-b9c8-4974-8308-05c8a81c4333" Id="_123" Win64="yes">
+                            <File Id="_123f" KeyPath="yes" Name="windowsaccessbridge-64.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\windowsaccessbridge-64.dll"/>
+                        </Component>
+                        <Component Guid="c61582a5-7868-4a78-8a80-b6d2bdad542f" Id="_124" Win64="yes">
+                            <File Id="_124f" KeyPath="yes" Name="WinFallbackLookup.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\WinFallbackLookup.dll"/>
+                        </Component>
+                        <Component Guid="266045a7-525f-4796-9a55-a187729b7016" Id="_125" Win64="yes">
+                            <File Id="_125f" KeyPath="yes" Name="zip.dll" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\bin\zip.dll"/>
+                        </Component>
+                    </Directory>
+                    <Directory Id="_126" Name="conf">
+                        <Component Guid="ffc09b7f-6f4b-4d31-97bd-72433d200be1" Id="_127" Win64="yes">
+                            <File Id="_127f" KeyPath="yes" Name="logging.properties" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\logging.properties"/>
+                        </Component>
+                        <Directory Id="_128" Name="management">
+                            <Component Guid="a4fa2532-f4f8-40af-94b0-3629a4f2ebbf" Id="_129" Win64="yes">
+                                <File Id="_129f" KeyPath="yes" Name="jmxremote.access" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\management\jmxremote.access"/>
+                            </Component>
+                            <Component Guid="32abbb91-b73f-49ed-86d7-cf6807a24ead" Id="_130" Win64="yes">
+                                <File Id="_130f" KeyPath="yes" Name="jmxremote.password.template" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\management\jmxremote.password.template"/>
+                            </Component>
+                            <Component Guid="8cbef3c9-51b6-4cff-ace1-3643149ea56c" Id="_131" Win64="yes">
+                                <File Id="_131f" KeyPath="yes" Name="management.properties" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\management\management.properties"/>
+                            </Component>
+                        </Directory>
+                        <Component Guid="920dde92-f72b-40ef-91f8-75d1b4852f36" Id="_132" Win64="yes">
+                            <File Id="_132f" KeyPath="yes" Name="net.properties" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\net.properties"/>
+                        </Component>
+                        <Directory Id="_133" Name="security">
+                            <Component Guid="ea0fa8ea-3554-4b12-9010-0af3555724ed" Id="_134" Win64="yes">
+                                <File Id="_134f" KeyPath="yes" Name="java.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\java.policy"/>
+                            </Component>
+                            <Component Guid="dc1cd815-899e-420b-a5a2-5959b6862654" Id="_135" Win64="yes">
+                                <File Id="_135f" KeyPath="yes" Name="java.security" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\java.security"/>
+                            </Component>
+                            <Directory Id="_136" Name="policy">
+                                <Directory Id="_137" Name="limited">
+                                    <Component Guid="b564dd82-223e-4c86-8d62-f7467efa4219" Id="_138" Win64="yes">
+                                        <File Id="_138f" KeyPath="yes" Name="default_local.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\policy\limited\default_local.policy"/>
+                                    </Component>
+                                    <Component Guid="5e365fa6-ec69-4aac-9e26-0f2c28667834" Id="_139" Win64="yes">
+                                        <File Id="_139f" KeyPath="yes" Name="default_US_export.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\policy\limited\default_US_export.policy"/>
+                                    </Component>
+                                    <Component Guid="31bdd398-3353-45ac-a52a-a07b80e77c5e" Id="_140" Win64="yes">
+                                        <File Id="_140f" KeyPath="yes" Name="exempt_local.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\policy\limited\exempt_local.policy"/>
+                                    </Component>
+                                </Directory>
+                                <Component Guid="99bb81d4-904d-42d5-a5fc-2ddec2bfe55c" Id="_141" Win64="yes">
+                                    <File Id="_141f" KeyPath="yes" Name="README.txt" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\policy\README.txt"/>
+                                </Component>
+                                <Directory Id="_142" Name="unlimited">
+                                    <Component Guid="318df657-9e66-415e-9def-8109c40dba28" Id="_143" Win64="yes">
+                                        <File Id="_143f" KeyPath="yes" Name="default_local.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\policy\unlimited\default_local.policy"/>
+                                    </Component>
+                                    <Component Guid="b28a60ba-4b9e-407d-926d-ac5c0721388b" Id="_144" Win64="yes">
+                                        <File Id="_144f" KeyPath="yes" Name="default_US_export.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\security\policy\unlimited\default_US_export.policy"/>
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Component Guid="cedefeef-d474-4eab-a93f-250ec4719e15" Id="_145" Win64="yes">
+                            <File Id="_145f" KeyPath="yes" Name="sound.properties" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\conf\sound.properties"/>
+                        </Component>
+                    </Directory>
+                    <Directory Id="_146" Name="lib">
+                        <Component Guid="e9188ada-059b-4e11-8f53-cf1c19d735a0" Id="_147" Win64="yes">
+                            <File Id="_147f" KeyPath="yes" Name="classlist" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\classlist"/>
+                        </Component>
+                        <Component Guid="36749927-0763-490c-977c-7a68e441a9cb" Id="_148" Win64="yes">
+                            <File Id="_148f" KeyPath="yes" Name="ct.sym" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\ct.sym"/>
+                        </Component>
+                        <Component Guid="4b38df14-a2ec-40bb-841e-dd8e3038248b" Id="_149" Win64="yes">
+                            <File Id="_149f" KeyPath="yes" Name="fontconfig.bfc" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\fontconfig.bfc"/>
+                        </Component>
+                        <Component Guid="e7bb5d27-5cc3-4728-bdcb-93563638ddcc" Id="_150" Win64="yes">
+                            <File Id="_150f" KeyPath="yes" Name="fontconfig.properties.src" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\fontconfig.properties.src"/>
+                        </Component>
+                        <Component Guid="8143f613-c45a-4550-98e5-fff73b506c20" Id="_151" Win64="yes">
+                            <File Id="_151f" KeyPath="yes" Name="jawt.lib" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\jawt.lib"/>
+                        </Component>
+                        <Directory Id="_152" Name="jfr">
+                            <Component Guid="e69429a5-a1d3-4dc4-a3d4-997c804dc586" Id="_153" Win64="yes">
+                                <File Id="_153f" KeyPath="yes" Name="default.jfc" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\jfr\default.jfc"/>
+                            </Component>
+                            <Component Guid="458ee8ec-f7a5-4eea-971f-ef4c096acdbb" Id="_154" Win64="yes">
+                                <File Id="_154f" KeyPath="yes" Name="profile.jfc" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\jfr\profile.jfc"/>
+                            </Component>
+                        </Directory>
+                        <Component Guid="38ee9097-290e-4cf5-b245-fcc24c14178e" Id="_155" Win64="yes">
+                            <File Id="_155f" KeyPath="yes" Name="jrt-fs.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\jrt-fs.jar"/>
+                        </Component>
+                        <Component Guid="c06067ce-09b1-40eb-b695-cafb6d142dac" Id="_156" Win64="yes">
+                            <File Id="_156f" KeyPath="yes" Name="jvm.cfg" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\jvm.cfg"/>
+                        </Component>
+                        <Component Guid="6fccbfa0-5c4f-4b21-9394-4d72919ee786" Id="_157" Win64="yes">
+                            <File Id="_157f" KeyPath="yes" Name="jvm.lib" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\jvm.lib"/>
+                        </Component>
+                        <Component Guid="df5522f9-2fd5-4bd9-97b0-7741b8ae31fc" Id="_158" Win64="yes">
+                            <File Id="_158f" KeyPath="yes" Name="modules" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\modules"/>
+                        </Component>
+                        <Component Guid="a7891586-c470-4510-9e21-d4b792dd9c04" Id="_159" Win64="yes">
+                            <File Id="_159f" KeyPath="yes" Name="psfont.properties.ja" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\psfont.properties.ja"/>
+                        </Component>
+                        <Component Guid="94e1d9c2-ad02-438a-88e3-ec67a38dbf55" Id="_160" Win64="yes">
+                            <File Id="_160f" KeyPath="yes" Name="psfontj2d.properties" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\psfontj2d.properties"/>
+                        </Component>
+                        <Directory Id="_161" Name="security">
+                            <Component Guid="0cbbbba2-d922-4e54-8ec2-f85f73b880f2" Id="_162" Win64="yes">
+                                <File Id="_162f" KeyPath="yes" Name="blocked.certs" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\security\blocked.certs"/>
+                            </Component>
+                            <Component Guid="37493a23-2132-485b-be32-6846288101c8" Id="_163" Win64="yes">
+                                <File Id="_163f" KeyPath="yes" Name="cacerts" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\security\cacerts"/>
+                            </Component>
+                            <Component Guid="ab63b309-92e1-467a-8314-62af40c78018" Id="_164" Win64="yes">
+                                <File Id="_164f" KeyPath="yes" Name="default.policy" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\security\default.policy"/>
+                            </Component>
+                            <Component Guid="8e26ac20-88ae-4d72-9ebb-3c0d8ed6c4bf" Id="_165" Win64="yes">
+                                <File Id="_165f" KeyPath="yes" Name="public_suffix_list.dat" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\security\public_suffix_list.dat"/>
+                            </Component>
+                        </Directory>
+                        <Component Guid="887b5937-ea51-4eea-85e3-0872e4db6d80" Id="_166" Win64="yes">
+                            <File Id="_166f" KeyPath="yes" Name="tzdb.dat" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\tzdb.dat"/>
+                        </Component>
+                        <Component Guid="31a3a245-e770-4b92-bc8c-652fa3d7415e" Id="_167" Win64="yes">
+                            <File Id="_167f" KeyPath="yes" Name="tzmappings" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\lib\tzmappings"/>
+                        </Component>
+                    </Directory>
+                    <Component Guid="1d45d671-96e1-4374-b6cc-203a21d449ea" Id="_168" Win64="yes">
+                        <File Id="_168f" KeyPath="yes" Name="release" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\jre\release"/>
+                    </Component>
+                </Directory>
+                <Directory Id="_169" Name="libs">
+                    <Component Guid="349652cc-8cc4-4666-b2e1-9d31a374bd4f" Id="_170" Win64="yes">
+                        <File Id="_170f" KeyPath="yes" Name="gson-2.10.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\gson-2.10.jar"/>
+                    </Component>
+                    <Component Guid="b8b60446-4545-40ca-940d-4b7af43df99c" Id="_171" Win64="yes">
+                        <File Id="_171f" KeyPath="yes" Name="javafx-base-17.0.2-win.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-base-17.0.2-win.jar"/>
+                    </Component>
+                    <Component Guid="8ef8e56b-5910-4feb-82dd-eaec0178b65e" Id="_172" Win64="yes">
+                        <File Id="_172f" KeyPath="yes" Name="javafx-base-17.0.2.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-base-17.0.2.jar"/>
+                    </Component>
+                    <Component Guid="a6f64749-7036-4025-8c87-f7b8dbd937b9" Id="_173" Win64="yes">
+                        <File Id="_173f" KeyPath="yes" Name="javafx-controls-17.0.2-win.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-controls-17.0.2-win.jar"/>
+                    </Component>
+                    <Component Guid="588a6d60-dc83-4598-b220-8f0e0d790dac" Id="_174" Win64="yes">
+                        <File Id="_174f" KeyPath="yes" Name="javafx-controls-17.0.2.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-controls-17.0.2.jar"/>
+                    </Component>
+                    <Component Guid="fd1ca03f-a423-4781-b0f9-54a77000cc98" Id="_175" Win64="yes">
+                        <File Id="_175f" KeyPath="yes" Name="javafx-fxml-17.0.2-win.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-fxml-17.0.2-win.jar"/>
+                    </Component>
+                    <Component Guid="7cb9b4b4-6855-49ca-8f7f-6de81e89a5d8" Id="_176" Win64="yes">
+                        <File Id="_176f" KeyPath="yes" Name="javafx-fxml-17.0.2.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-fxml-17.0.2.jar"/>
+                    </Component>
+                    <Component Guid="7e5e1185-3264-43f5-aa33-fc5ca2141450" Id="_177" Win64="yes">
+                        <File Id="_177f" KeyPath="yes" Name="javafx-graphics-17.0.2-win.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-graphics-17.0.2-win.jar"/>
+                    </Component>
+                    <Component Guid="de86c158-9a20-444e-9dd6-3339421332ea" Id="_178" Win64="yes">
+                        <File Id="_178f" KeyPath="yes" Name="javafx-graphics-17.0.2.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\javafx-graphics-17.0.2.jar"/>
+                    </Component>
+                    <Component Guid="654f8d14-1bdb-4efc-ae4f-d9bd7868aa18" Id="_179" Win64="yes">
+                        <File Id="_179f" KeyPath="yes" Name="spring-security-crypto-5.3.3.RELEASE.jar" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\libs\spring-security-crypto-5.3.3.RELEASE.jar"/>
+                    </Component>
+                </Directory>
+                <Component Guid="2a938467-e9f7-462c-bbce-471a8acdbfc2" Id="_180" Win64="yes">
+                    <File Id="exeFile" KeyPath="yes" Name="Vizsgaremek_JavaFx.exe" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\Vizsgaremek_JavaFx.exe">
+                        <Shortcut Description="Vizsgaremek_JavaFx" Directory="ProgramMenuFolder" Id="ApplicationStartMenuShortcut" Name="Vizsgaremek_JavaFx"/>
+                    </File>
+                    <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+                    <RegistryValue Key="Software\ACME\Vizsgaremek_JavaFx" Name="installed" Root="HKLM" Type="integer" Value="1"/>
+                </Component>
+                <Component Guid="1ab8a5e4-f156-4fa1-98f3-e4c4ab512558" Id="_181" Win64="yes">
+                    <File Id="_181f" KeyPath="yes" Name="Vizsgaremek_JavaFx.ico" Source="C:\Users\admin\Desktop\Vizsgaremek\Vizsgaremek_JavaFx\target\Vizsgaremek_JavaFx\Vizsgaremek_JavaFx.ico"/>
+                </Component>
+            </Directory>
+            <Directory Id="ProgramMenuFolder"/>
+            <Component Guid="239b0e03-a056-4809-ba96-f1dd66889057" Id="RegistryEntries"/>
+        </Directory>
+    </Module>
+</Wix>
